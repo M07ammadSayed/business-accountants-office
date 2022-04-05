@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap')
+$main-color: #F48C06
+$secondary-color: #08062B
+$primary-text: #000
+$secondary-text: #554F4F
+$primary-bg: #eee
+$secondary-bg: #000
+
+*
+    padding: 0
+    margin: 0
+    outline: none
+    box-sizing: border-box
+
+body
+    font-family: 'Tajawal', sans-serif !important
+    color: $primary-text !important
+    background-color: $primary-bg !important
+    // overflow-x: hidden
+
+::-webkit-scrollbar
+    width: 10px
+
+::-webkit-scrollbar-thumb
+    background-color: $main-color
+    height: 67px
+
+::-webkit-scrollbar-track
+    background-color: $secondary-color
+
+a.circle-up
+    position: fixed
+    bottom: -50px
+    right: 15px
+    z-index: 9999
+    cursor: pointer
+    transition: filter .2s ease-in-out, opacity .5s ease-in-out, bottom .5s ease-in-out
+    opacity: 0
+    &:hover
+            opacity: .7 !important
+    &:active
+            opacity: .5 !important
+    svg.fa-circle-up
+        color: $main-color
+        width: 40px
+        height: 40px
+        z-index: 9999
+        cursor: pointer
+        transition: filter .2s ease-in-out, opacity .5s ease-in-out, bottom .5s ease-in-out
+
+nav
+    position: fixed
+    width: 100%
+    height: 80.7px
+    display: flex
+    justify-content: space-around
+    align-items: center
+    background-color: $secondary-color
+    z-index: 9998
+    div
+        a
+            img
+                max-width: 100%
+                height: 46.295px
+                cursor: pointer
+    ul.main-nav
+        position: relative
+        width: 48.948%
+        // height: 78px
+        height: inherit
+        display: flex
+        justify-content: space-between
+        align-items: center
+        list-style: none
+        a
+            text-decoration: none
+            color: #E4E6EB
+            li
+                padding: 45px 0 25px
+                font-weight: 400
+                border-bottom: 3px solid transparent
+                transition: border-bottom-color .2s linear 0s
+                color: #E4E6EB
+                &:hover
+                    border-bottom-color: $main-color
+    div.bars
+        display: none
+    ul.mo-nav
+        display: none
+
+section.landing
+    width: 100%
+    height: 100vh
+    position: relative
+    overflow: hidden
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-wrap: wrap
+    &::before
+        content: ""
+        position: fixed
+        width: 100%
+        height: 100vh
+        bottom: 0
+        top: 0
+        left: 0
+        right: 0
+        background: url("imgs/landing.jpg") no-repeat center
+        background-size: cover
+        will-change: transform
+        z-index: -1
+    &::after
+        content: ""
+        position: fixed
+        width: 100%
+        height: 100vh
+        background-color: rgba(0, 0, 0, 0.65)
+        bottom: 0
+        top: 0
+        left: 0
+        right: 0
+        will-change: transform
+        z-index: -1
+    img
+        position: absolute
+        z-index: -2
+        width: 100%
+        height: calc(100vh - 80.7px)
+        top: 80.7px
+        left: 0
+        object-fit: cover
+        filter: brightness(50%)
+    div
+        position: relative
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        text-align: center
+        h1
+            font-size: 40px
+            letter-spacing: 1.5px
+            margin-bottom: 21.44px
+            font-weight: 700
+            color: #E4E6EB
+            cursor: default
+        p
+            font-size: 18px
+            letter-spacing: 1px
+            margin-bottom: 50px
+            font-weight: 400
+            color: #B0B3B8
+            cursor: default
+        a
+            button
+                background-color: $main-color
+                font-weight: 700
+                transition: color .5s ease-in-out, background-color .5s ease-in-out
+                border: 0
+                color: #E4E6EB
+                &:hover
+                    background-color: $secondary-color
+                    color: #E4E6EB
+                &:active
+                    filter: brightness(75%)
+                &:focus
+                    background-color: $main-color
+                    color: #E4E6EB
+                    outline: none
+                    box-shadow: none
+
+section.why
+    position: relative
+    width: 100%
+    height: 125vh
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-direction: column
+    background-color: $primary-bg
+    p.why-h1
+        position: absolute
+        font-size: 30px
+        font-weight: 700
+        top: -10vh
+        color: #E4E6EB
+        cursor: default
+        span
+            position: relative
+            display: inline-flex
+            img
+                position: absolute
+                width: 75px
+                height: 40px
+    div.opt
+        position: relative
+        width: 100%
+        display: flex
+        justify-content: space-around
+        align-items: center
+        margin: 50px 0 0 0
+        background-color: $primary-bg
+        div
+            position: relative
+            width: 260px
+            height: 189.38px
+            background-color: $primary-bg !important
+            transition: transform .3s linear
+            &:hover
+                transform: translateY(-20px)
+                span.br
+                    top: 80px
+            span.br
+                width: 5px
+                height: 55px
+                background-color: $main-color
+                position: absolute
+                right: 0
+                top: 27.5px
+                transition: top .3s linear
+            h5
+                font-weight: 700
+                margin: 30px 20px 14px
+                cursor: default
+            p
+                font-size: 14px
+                font-weight: 400
+                color: $secondary-text
+                margin: 14px 20px 40px
+    div.video
+        margin-bottom: 50px
+        video
+            width: 700px
+            height: 400px
+        div
+            position: relative
+            display: flex
+            justify-content: flex-start
+            align-items: center
+            width: fit-content
+            height: fit-content
+            // background-color: $secondary-color
+            // cursor: pointer
+            top: -20px
+            right: 17.5px
+            div
+                position: absolute
+                background-color: $secondary-color
+                cursor: pointer
+                display: flex
+                justify-content: center
+                align-items: center
+                &:first-child
+                    display: block
+                &:last-child
+                    display: none
+                svg
+                    padding: 20px 30px
+                svg.fa-play
+                    width: 15px
+                    height: 15px
+                    color: $main-color
+                    cursor: pointer
+                svg.fa-pause
+                    width: 15px
+                    height: 15px
+                    color: $main-color
+                    cursor: pointer
+
+section.services-provided
+    position: relative
+    width: 100%
+    height: 400vh
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    background-color: $primary-bg
+    overflow: hidden
+    h1
+        position: relative
+        font-size: 30px
+        font-weight: 700
+        color: $primary-text
+        cursor: default
+        margin-bottom: 50px
+        span
+            position: relative
+            display: inline-flex
+            img.why
+                position: absolute
+                width: 110px
+                height: 40px
+                top: 5px
+    h6
+        &:first-of-type
+            font-size: 26px
+            font-weight: 400
+            color: $secondary-text
+            margin-bottom: 25px
+        &:last-of-type
+            width: 800px
+            font-size: 14px
+            color: $secondary-text
+            text-align: center
+            line-height: 2
+            margin-bottom: 100px
+    div
+        position: relative
+        width: 96%
+        height: fit-content
+        display: flex
+        margin: 50px
+        justify-content: space-between
+        align-items: center
+        background-color: $primary-bg
+        div
+            width: fit-content
+            height: fit-content
+            overflow: hidden
+            background-color: $primary-bg
+            &:hover
+                img
+                    filter: grayscale(0)
+                    transform: scale(1.05) rotate(3deg)
+            img
+                position: relative
+                width: 400px
+                height: 300px
+                filter: grayscale(.7)
+                transition: .3s
+        div
+            position: relative
+            width: 400px
+            height: fit-content
+            display: flex
+            flex-direction: column
+            justify-content: flex-start
+            align-items: center
+            margin: 0
+            flex-wrap: wrap
+            background-color: $primary-bg
+            div
+                position: relative
+                width: 100%
+                height: fit-content
+                display: flex
+                flex-direction: row
+                justify-content: flex-start
+                align-items: center
+                margin-bottom: 30px
+                span
+                    font-size: 23px
+                    font-weight: 700
+                    color: #E4E6EB
+                    background-color: $main-color
+                    border: 0
+                    border-radius: 50%
+                    padding: 10px 22.02px
+                    margin-inline-end: 20px
+                h2
+                    font-size: 23px
+                    font-weight: 700
+                    color: $secondary-text
+            p
+                font-weight: 400
+                color: $secondary-text
+                text-align: justify
+                line-height: 1.6
+        &:first-of-type
+            flex-direction: row
+        &:nth-of-type(2)
+            flex-direction: row-reverse
+            div
+                ul
+                    position: relative
+                    list-style: none
+                    padding: 0
+                    margin: 0
+                    right: 20px
+                    li
+                        font-weight: 400
+                        color: $secondary-text
+                        text-align: justify
+                        line-height: 1.6
+                        font-size: 14px
+                        padding: 5px 0
+                        &::before
+                            content: ""
+                            position: relative
+                            float: right
+                            top: 7px
+                            left: 20px
+                            width: 11px
+                            height: 11px
+                            border: 0
+                            border-radius: 50%
+                            background-color: $main-color
+        &:nth-of-type(3)
+            flex-direction: row
+        &:nth-of-type(4)
+            flex-direction: row-reverse
+        &:last-of-type
+            flex-direction: row
+
+section.prices
+    position: relative
+    width: 100%
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    background-color: $primary-bg
+    div.prices-header
+        position: relative
+        display: flex
+        flex-direction: column
+        width: fit-content
+        height: fit-content
+        justify-content: center
+        align-items: center
+        div
+            position: relative
+            display: flex
+            width: fit-content
+            height: fit-content
+            justify-content: center
+            align-items: center
+            margin-block-end: 15px
+            h1
+                position: relative
+                font-size: 30px
+                font-weight: 700
+                color: $primary-text
+                cursor: default
+            img
+                position: absolute
+                display: inline-flex
+                width: 250px
+                height: 50px
+        p
+            font-size: 17px
+            font-weight: 400
+            animation-delay: .5s

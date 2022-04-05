@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap')
+$main-color: #F48C06
+$secondary-color: #08062B
+$primary-text: #000
+$secondary-text: #554F4F
+$primary-bg: #eee
+$secondary-bg: #999
+
+@media (max-width: 575.98px)
+    nav
+        justify-content: space-between
+        div
+            a
+                img
+                    height: 36.295px
+                    margin-inline-start: 20px
+        ul.main-nav
+            display: none
+        ul.mo-nav
+            position: absolute
+            width: 100%
+            height: 100vh
+            display: flex
+            flex-direction: column
+            justify-content: space-around
+            align-items: center
+            list-style: none
+            z-index: 9990
+            background-color: $main-color
+            top: 0
+            transform: translateY(-100vh)
+            transition: .3s
+            a
+                text-decoration: none
+                color: #E4E6EB
+                li
+                    padding: 0 0 10px 0
+                    font-weight: 400
+                    border-bottom: 3px solid transparent
+                    transition: border-bottom-color .2s linear 0s
+                    color: #E4E6EB
+                    &:hover
+                        border-bottom-color: $secondary-color
+        div.bars
+            display: block
+            svg.fa-bars
+                cursor: pointer
+                color: $main-color
+                width: 30px
+                height: 30px
+                margin-inline-end: 20px
+
+section.landing
+    div
+        h1
+            font-size: 20px
+            letter-spacing: 1px
+            margin-bottom: 15px
+        p
+            font-size: 14px
+
+section.why
+    height: 200vh
+    p.why-h1
+        font-size: 15px
+        span
+            img
+                width: 45px
+                height: 25px
+    div.opt
+        display: grid
+        div
+            width: 200px
+            height: 189.38px
+            span.br
+                width: 5px
+                height: 65px
+                top: 27.5px
+            h5
+                font-size: 20px
+    div.video
+        margin-bottom: 50px
+        video
+            width: 350px
+            height: 175px
+        div
+            position: relative
+            display: flex
+            justify-content: flex-start
+            align-items: center
+            width: fit-content
+            height: fit-content
+            // background-color: $secondary-color
+            // cursor: pointer
+            top: -20px
+            right: 17.5px
+            div
+                position: absolute
+                background-color: $secondary-color
+                cursor: pointer
+                display: flex
+                justify-content: center
+                align-items: center
+                &:first-child
+                    display: block
+                &:last-child
+                    display: none
+                svg
+                    padding: 10px 20px
+                svg.fa-play
+                    width: 15px
+                    height: 15px
+                    color: $main-color
+                    cursor: pointer
+                svg.fa-pause
+                    width: 15px
+                    height: 15px
+                    color: $main-color
+                    cursor: pointer
+
+section.services-provided
+    height: 600vh
+    overflow: hidden !important
+    h1
+        font-size: 15px
+        margin-bottom: 30px
+        span
+            img.why
+                width: 60px
+                height: 20px
+                top: 0
+    h6
+        text-align: center
+        &:first-of-type
+            font-size: 16px
+        &:last-of-type
+            width: 400px
+            font-size: 12px
+    div
+        flex-direction: column-reverse !important
+        div
+            width: fit-content
+            height: fit-content
+            overflow: hidden
+            background-color: $primary-bg
+            &:hover
+                img
+                    filter: grayscale(0)
+                    transform: scale(1.05) rotate(3deg)
+            img
+                position: relative
+                width: 200px
+                height: 300px
+                filter: grayscale(.7)
+                transition: .3s
+        div
+            flex-direction: column !important
+            div
+                flex-direction: row !important
+                justify-content: center !important
+                align-items: center !important
+                span
+                    font-size: 15px
+                    padding: 15px 22.02px
+                h2
+                    font-size: 15px
+            p
+                font-weight: 400
+                color: $secondary-text
+                text-align: justify
+                line-height: 1.6
+        &:first-of-type
+            flex-direction: row
+        &:nth-of-type(2)
+            flex-direction: row-reverse
+            div
+                ul
+                    position: relative
+                    list-style: none
+                    padding: 0
+                    margin: 0
+                    right: 20px
+                    li
+                        font-weight: 400
+                        color: $secondary-text
+                        text-align: justify
+                        line-height: 1.6
+                        font-size: 14px
+                        padding: 5px 0
+                        &::before
+                            content: ""
+                            position: relative
+                            float: right
+                            top: 7px
+                            left: 20px
+                            width: 11px
+                            height: 11px
+                            border: 0
+                            border-radius: 50%
+                            background-color: $main-color
+        &:nth-of-type(3)
+            flex-direction: row
+        &:nth-of-type(4)
+            flex-direction: row-reverse
+        &:last-of-type
+            flex-direction: row
