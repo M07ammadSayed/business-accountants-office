@@ -9,14 +9,13 @@ $secondary-bg: #000
 *
     padding: 0
     margin: 0
-    outline: none
-    box-sizing: border-box
+    outline: none !important
+    box-sizing: border-box !important
 
 body
     font-family: 'Tajawal', sans-serif !important
     color: $primary-text !important
     background-color: $primary-bg !important
-    // overflow-x: hidden
 
 ::-webkit-scrollbar
     width: 10px
@@ -170,12 +169,12 @@ section.landing
                     outline: none
                     box-shadow: none
 
-section.why
+section.why-con
     position: relative
     width: 100%
-    height: 125vh
+    height: fit-content
     display: flex
-    justify-content: space-between
+    justify-content: center
     align-items: center
     flex-direction: column
     background-color: $primary-bg
@@ -193,50 +192,63 @@ section.why
                 position: absolute
                 width: 75px
                 height: 40px
-    div.opt
+    div.opt-con
         position: relative
         width: 100%
-        display: flex
-        justify-content: space-around
-        align-items: center
-        margin: 50px 0 0 0
+        height: fit-content
+        margin: 50px 0 100px 0
         background-color: $primary-bg
-        div
+        div.row
             position: relative
-            width: 260px
-            height: 189.38px
-            background-color: $primary-bg !important
-            transition: transform .3s linear
-            &:hover
-                transform: translateY(-20px)
-                span.br
-                    top: 80px
-            span.br
-                width: 5px
-                height: 55px
-                background-color: $main-color
-                position: absolute
-                right: 0
-                top: 27.5px
-                transition: top .3s linear
-            h5
-                font-weight: 700
-                margin: 30px 20px 14px
-                cursor: default
-            p
-                font-size: 14px
-                font-weight: 400
-                color: $secondary-text
-                margin: 14px 20px 40px
+            width: 100%
+            div
+                position: relative
+                display: flex
+                justify-content: center
+                align-items: center
+                background-color: $primary-bg !important
+                margin: 20px 0 !important
+                div
+                    position: relative
+                    width: 260px
+                    height: 189.38px
+                    display: flex
+                    flex-direction: column
+                    align-items: flex-start
+                    background-color: $primary-bg !important
+                    transition: transform .3s linear
+                    margin: 0 !important
+                    padding: 0 !important
+                    &:hover
+                        transform: translateY(-20px)
+                        span.br
+                            top: 85px
+                    span.br
+                        width: 5px
+                        height: 55px
+                        background-color: $main-color
+                        position: absolute
+                        right: 0
+                        top: 27.5px
+                        transition: top .3s linear
+                    h5
+                        font-weight: 700
+                        margin: 30px 20px 14px
+                        cursor: default
+                    p
+                        font-size: 14px
+                        font-weight: 400
+                        color: $secondary-text
+                        margin: 14px 20px 40px
     div.video
-        margin-bottom: 50px
+        margin-bottom: 150px
         video
             width: 700px
             height: 400px
         div
             position: relative
             display: flex
-            justify-content: flex-start
+            justify-content: center
             align-items: center
             width: fit-content
             height: fit-content
@@ -246,32 +258,41 @@ section.why
             right: 17.5px
             div
                 position: absolute
+                width: fit-content
+                height: fit-content
                 background-color: $secondary-color
                 cursor: pointer
                 display: flex
                 justify-content: center
                 align-items: center
+                padding: 20px 30px !important
                 &:first-child
                     display: block
                 &:last-child
                     display: none
+                i.fa-play,i.fa-pause
+                    width: 15px
+                    height: 15px
+                    // fill: $main-color !important
+                    cursor: pointer
+                    // padding: 20px 30px !important
                 svg
-                    padding: 20px 30px
-                svg.fa-play
-                    width: 15px
-                    height: 15px
-                    color: $main-color
-                    cursor: pointer
-                svg.fa-pause
-                    width: 15px
-                    height: 15px
-                    color: $main-color
-                    cursor: pointer
+                    color: $main-color !important
+
+@media (min-width: 576px) and (max-width: 991.98px)
+    section.why-con
+        div.video
+            video
+                width: 100%
+                height: 300px
+            div
+                top: -20px
+                right: 30px
 
 section.services-provided
     position: relative
     width: 100%
-    height: 400vh
+    height: fit-content
     display: flex
     justify-content: center
     align-items: center
@@ -308,11 +329,11 @@ section.services-provided
             margin-bottom: 100px
     div
         position: relative
-        width: 96%
+        width: 100%
         height: fit-content
         display: flex
         margin: 50px
-        justify-content: space-between
+        justify-content: space-around
         align-items: center
         background-color: $primary-bg
         div
@@ -359,6 +380,7 @@ section.services-provided
                     border-radius: 50%
                     padding: 10px 22.02px
                     margin-inline-end: 20px
+                    margin-block-end: 20px
                 h2
                     font-size: 23px
                     font-weight: 700
@@ -404,15 +426,27 @@ section.services-provided
         &:last-of-type
             flex-direction: row
 
-section.prices
+@media (min-width: 576px) and (max-width: 991.98px)
+    section.services-provided
+        div
+            flex-direction: column-reverse !important
+            div
+                &:last-child
+                    flex-direction: column !important
+                    div
+                        flex-direction: column !important
+
+section.prices-con
     position: relative
     width: 100%
-    height: 100vh
+    height: fit-content
     display: flex
     justify-content: center
     align-items: center
     flex-direction: column
-    background-color: $primary-bg
+    background-color: $primary-bg !important
+    padding-block-start: 100px
+    overflow: hidden
     div.prices-header
         position: relative
         display: flex
@@ -421,6 +455,7 @@ section.prices
         height: fit-content
         justify-content: center
         align-items: center
+        margin-block-end: 50px
         div
             position: relative
             display: flex
@@ -444,3 +479,104 @@ section.prices
             font-size: 17px
             font-weight: 400
             animation-delay: .5s
+    div.prices-details
+        position: relative
+        width: 100%
+        height: fit-content
+        display: flex
+        margin: 0 !important
+        flex-direction: row !important
+        div.row
+            position: relative
+            width: 100%
+            margin: 0 !important
+            div
+                position: relative
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+                align-items: center
+                padding: 40px 0 !important
+                background-color: $secondary-color
+                &:nth-child(2)
+                    height: fit-content
+                    background-color: $main-color
+                    button
+                        color: $secondary-color
+                        border-color: $secondary-color
+                div.plan-2-de
+                    background-color: $main-color !important
+                div
+                    position: relative
+                    span
+                        position: relative
+                        display: inline-block
+                        width: 100%
+                        font-size: 25px
+                        text-align: center
+                        color: #E4E6EB
+                        font-weight: 700
+                        margin-block-end: 25px
+                    ul
+                        list-style: none
+                        margin-block-end: 70px
+                        li
+                            font-weight: 400
+                            color: #E4E6EB
+                            text-align: justify
+                            line-height: 1.6
+                            font-size: 18px
+                            padding: 20px
+                            &::before
+                                content: ""
+                                position: relative
+                                float: right
+                                top: 7px
+                                left: 20px
+                                width: 11px
+                                height: 11px
+                                border: 0
+                                border-radius: 50%
+                                background-color: #E4E6EB
+                button.plan-2-bu
+                    &::before
+                        content: ''
+                        position: absolute
+                        left: 150px
+                        top: 0
+                        height: 100%
+                        width: 100%
+                        background-color: $secondary-color
+                        transition: .3s
+                        z-index: -11
+                button
+                    position: relative
+                    width: 150px
+                    height: 75px
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    margin-block-start: 50px
+                    font-size: 25px
+                    font-weight: 700
+                    background-color: transparent
+                    color: $main-color
+                    border: 2px solid $main-color
+                    border-radius: 5px
+                    text-align: center
+                    overflow: hidden
+                    z-index: 9997
+                    &:hover
+                        color: #E4E6EB
+                        &::before
+                            left: 0
+                    &::before
+                        content: ''
+                        position: absolute
+                        left: 150px
+                        top: 0
+                        height: 100%
+                        width: 100%
+                        background-color: $main-color
+                        transition: .3s
+                        z-index: -11

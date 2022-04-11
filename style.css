@@ -2,9 +2,9 @@
 * {
   padding: 0;
   margin: 0;
-  outline: none;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  outline: none !important;
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
 }
 
 body {
@@ -246,16 +246,18 @@ section.landing div a button:focus {
           box-shadow: none;
 }
 
-section.why {
+section.why-con {
   position: relative;
   width: 100%;
-  height: 125vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -266,7 +268,7 @@ section.why {
   background-color: #eee;
 }
 
-section.why p.why-h1 {
+section.why-con p.why-h1 {
   position: absolute;
   font-size: 30px;
   font-weight: 700;
@@ -275,55 +277,82 @@ section.why p.why-h1 {
   cursor: default;
 }
 
-section.why p.why-h1 span {
+section.why-con p.why-h1 span {
   position: relative;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
-section.why p.why-h1 span img {
+section.why-con p.why-h1 span img {
   position: absolute;
   width: 75px;
   height: 40px;
 }
 
-section.why div.opt {
+section.why-con div.opt-con {
   position: relative;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 50px 0 0 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 50px 0 100px 0;
   background-color: #eee;
 }
 
-section.why div.opt div {
+section.why-con div.opt-con div.row {
+  position: relative;
+  width: 100%;
+}
+
+section.why-con div.opt-con div.row div {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #eee !important;
+  margin: 20px 0 !important;
+}
+
+section.why-con div.opt-con div.row div div {
   position: relative;
   width: 260px;
   height: 189.38px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   background-color: #eee !important;
   -webkit-transition: -webkit-transform .3s linear;
   transition: -webkit-transform .3s linear;
   transition: transform .3s linear;
   transition: transform .3s linear, -webkit-transform .3s linear;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
-section.why div.opt div:hover {
+section.why-con div.opt-con div.row div div:hover {
   -webkit-transform: translateY(-20px);
           transform: translateY(-20px);
 }
 
-section.why div.opt div:hover span.br {
-  top: 80px;
+section.why-con div.opt-con div.row div div:hover span.br {
+  top: 85px;
 }
 
-section.why div.opt div span.br {
+section.why-con div.opt-con div.row div div span.br {
   width: 5px;
   height: 55px;
   background-color: #F48C06;
@@ -334,36 +363,36 @@ section.why div.opt div span.br {
   transition: top .3s linear;
 }
 
-section.why div.opt div h5 {
+section.why-con div.opt-con div.row div div h5 {
   font-weight: 700;
   margin: 30px 20px 14px;
   cursor: default;
 }
 
-section.why div.opt div p {
+section.why-con div.opt-con div.row div div p {
   font-size: 14px;
   font-weight: 400;
   color: #554F4F;
   margin: 14px 20px 40px;
 }
 
-section.why div.video {
-  margin-bottom: 50px;
+section.why-con div.video {
+  margin-bottom: 150px;
 }
 
-section.why div.video video {
+section.why-con div.video video {
   width: 700px;
   height: 400px;
 }
 
-section.why div.video div {
+section.why-con div.video div {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -377,8 +406,14 @@ section.why div.video div {
   right: 17.5px;
 }
 
-section.why div.video div div {
+section.why-con div.video div div {
   position: absolute;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   background-color: #08062B;
   cursor: pointer;
   display: -webkit-box;
@@ -390,38 +425,44 @@ section.why div.video div div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 20px 30px !important;
 }
 
-section.why div.video div div:first-child {
+section.why-con div.video div div:first-child {
   display: block;
 }
 
-section.why div.video div div:last-child {
+section.why-con div.video div div:last-child {
   display: none;
 }
 
-section.why div.video div div svg {
-  padding: 20px 30px;
-}
-
-section.why div.video div div svg.fa-play {
+section.why-con div.video div div i.fa-play, section.why-con div.video div div i.fa-pause {
   width: 15px;
   height: 15px;
-  color: #F48C06;
   cursor: pointer;
 }
 
-section.why div.video div div svg.fa-pause {
-  width: 15px;
-  height: 15px;
-  color: #F48C06;
-  cursor: pointer;
+section.why-con div.video div div svg {
+  color: #F48C06 !important;
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+  section.why-con div.video video {
+    width: 100%;
+    height: 300px;
+  }
+  section.why-con div.video div {
+    top: -20px;
+    right: 30px;
+  }
 }
 
 section.services-provided {
   position: relative;
   width: 100%;
-  height: 400vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -436,7 +477,7 @@ section.services-provided {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #eee;
-  overflow: hid;
+  overflow: hidden;
 }
 
 section.services-provided h1 {
@@ -480,7 +521,7 @@ section.services-provided h6:last-of-type {
 
 section.services-provided div {
   position: relative;
-  width: 96%;
+  width: 100%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -488,9 +529,8 @@ section.services-provided div {
   display: -ms-flexbox;
   display: flex;
   margin: 50px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -582,6 +622,8 @@ section.services-provided div div div span {
   padding: 10px 22.02px;
   -webkit-margin-end: 20px;
           margin-inline-end: 20px;
+  -webkit-margin-after: 20px;
+          margin-block-end: 20px;
 }
 
 section.services-provided div div div h2 {
@@ -662,10 +704,33 @@ section.services-provided div:last-of-type {
           flex-direction: row;
 }
 
-section.prices {
+@media (min-width: 576px) and (max-width: 991.98px) {
+  section.services-provided div {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: reverse !important;
+        -ms-flex-direction: column-reverse !important;
+            flex-direction: column-reverse !important;
+  }
+  section.services-provided div div:last-child {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  section.services-provided div div:last-child div {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+}
+
+section.prices-con {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -679,10 +744,13 @@ section.prices {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #eee;
+  background-color: #eee !important;
+  -webkit-padding-before: 100px;
+          padding-block-start: 100px;
+  overflow: hidden;
 }
 
-section.prices div.prices-header {
+section.prices-con div.prices-header {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -703,9 +771,11 @@ section.prices div.prices-header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-margin-after: 50px;
+          margin-block-end: 50px;
 }
 
-section.prices div.prices-header div {
+section.prices-con div.prices-header div {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -726,7 +796,7 @@ section.prices div.prices-header div {
           margin-block-end: 15px;
 }
 
-section.prices div.prices-header div h1 {
+section.prices-con div.prices-header div h1 {
   position: relative;
   font-size: 30px;
   font-weight: 700;
@@ -734,7 +804,7 @@ section.prices div.prices-header div h1 {
   cursor: default;
 }
 
-section.prices div.prices-header div img {
+section.prices-con div.prices-header div img {
   position: absolute;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -743,10 +813,171 @@ section.prices div.prices-header div img {
   height: 50px;
 }
 
-section.prices div.prices-header p {
+section.prices-con div.prices-header p {
   font-size: 17px;
   font-weight: 400;
   -webkit-animation-delay: .5s;
           animation-delay: .5s;
+}
+
+section.prices-con div.prices-details {
+  position: relative;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 !important;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+}
+
+section.prices-con div.prices-details div.row {
+  position: relative;
+  width: 100%;
+  margin: 0 !important;
+}
+
+section.prices-con div.prices-details div.row div {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 0 !important;
+  background-color: #08062B;
+}
+
+section.prices-con div.prices-details div.row div:nth-child(2) {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #F48C06;
+}
+
+section.prices-con div.prices-details div.row div:nth-child(2) button {
+  color: #08062B;
+  border-color: #08062B;
+}
+
+section.prices-con div.prices-details div.row div div.plan-2-de {
+  background-color: #F48C06 !important;
+}
+
+section.prices-con div.prices-details div.row div div {
+  position: relative;
+}
+
+section.prices-con div.prices-details div.row div div span {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  font-size: 25px;
+  text-align: center;
+  color: #E4E6EB;
+  font-weight: 700;
+  -webkit-margin-after: 25px;
+          margin-block-end: 25px;
+}
+
+section.prices-con div.prices-details div.row div div ul {
+  list-style: none;
+  -webkit-margin-after: 70px;
+          margin-block-end: 70px;
+}
+
+section.prices-con div.prices-details div.row div div ul li {
+  font-weight: 400;
+  color: #E4E6EB;
+  text-align: justify;
+  line-height: 1.6;
+  font-size: 18px;
+  padding: 20px;
+}
+
+section.prices-con div.prices-details div.row div div ul li::before {
+  content: "";
+  position: relative;
+  float: right;
+  top: 7px;
+  left: 20px;
+  width: 11px;
+  height: 11px;
+  border: 0;
+  border-radius: 50%;
+  background-color: #E4E6EB;
+}
+
+section.prices-con div.prices-details div.row div button.plan-2-bu::before {
+  content: '';
+  position: absolute;
+  left: 150px;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #08062B;
+  -webkit-transition: .3s;
+  transition: .3s;
+  z-index: -11;
+}
+
+section.prices-con div.prices-details div.row div button {
+  position: relative;
+  width: 150px;
+  height: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-margin-before: 50px;
+          margin-block-start: 50px;
+  font-size: 25px;
+  font-weight: 700;
+  background-color: transparent;
+  color: #F48C06;
+  border: 2px solid #F48C06;
+  border-radius: 5px;
+  text-align: center;
+  overflow: hidden;
+  z-index: 9997;
+}
+
+section.prices-con div.prices-details div.row div button:hover {
+  color: #E4E6EB;
+}
+
+section.prices-con div.prices-details div.row div button:hover::before {
+  left: 0;
+}
+
+section.prices-con div.prices-details div.row div button::before {
+  content: '';
+  position: absolute;
+  left: 150px;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #F48C06;
+  -webkit-transition: .3s;
+  transition: .3s;
+  z-index: -11;
 }
 /*# sourceMappingURL=style.css.map */
