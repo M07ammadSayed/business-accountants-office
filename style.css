@@ -248,10 +248,10 @@ section.landing div a button:focus {
 
 @media (min-width: 0) and (max-width: 991.98px) {
   section.landing div h1 {
-    font-size: 20px;
+    font-size: 25px;
   }
   section.landing div p {
-    font-size: 15px;
+    font-size: 17px;
     margin-bottom: 50px;
   }
 }
@@ -458,8 +458,12 @@ section.why-con div.video div div svg {
 
 @media (min-width: 0) and (max-width: 991.98px) {
   section.why-con p.why-h1 {
-    font-size: 20px;
-    top: -15vh;
+    font-size: 25px;
+  }
+  section.why-con p.why-h1 span img {
+    position: absolute;
+    width: 70px;
+    height: 35px;
   }
   section.why-con div.video video {
     width: 100%;
@@ -724,21 +728,21 @@ section.services-provided div:last-of-type {
 
 @media (min-width: 0) and (max-width: 991.98px) {
   section.services-provided h1 {
-    font-size: 20px;
-    margin-bottom: 30px;
+    font-size: 25px;
+    margin-bottom: 25px;
   }
   section.services-provided h1 span img.why {
-    width: 90px;
-    height: 20px;
+    width: 85px;
+    height: 30px;
     top: 5px;
   }
   section.services-provided h6:first-of-type {
-    font-size: 18px;
-    margin-bottom: 15px;
+    font-size: 17px;
+    margin-bottom: 40px;
   }
   section.services-provided h6:last-of-type {
-    width: 90%;
-    font-size: 14px;
+    width: 95%;
+    font-size: 12px;
     margin-bottom: 50px;
   }
   section.services-provided div {
@@ -746,7 +750,40 @@ section.services-provided div:last-of-type {
     -webkit-box-direction: reverse !important;
         -ms-flex-direction: column-reverse !important;
             flex-direction: column-reverse !important;
-    padding: 0 20px;
+    padding: 0 50px !important;
+  }
+  section.services-provided div div {
+    position: relative;
+    width: 400px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    background-color: #eee;
+  }
+  section.services-provided div div div span {
+    font-size: 20px;
+  }
+  section.services-provided div div div h2 {
+    font-size: 20px;
+  }
+  section.services-provided div div p {
+    font-size: 14px;
   }
   section.services-provided div div:last-child {
     -webkit-box-orient: vertical !important;
