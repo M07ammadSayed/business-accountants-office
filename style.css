@@ -755,6 +755,10 @@ section.services-provided div:last-of-type {
         -ms-flex-direction: column-reverse !important;
             flex-direction: column-reverse !important;
   }
+  section.services-provided div div:first-child img {
+    width: 100%;
+    height: 100%;
+  }
   section.services-provided div div:last-child {
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;
