@@ -388,6 +388,7 @@ section.why-con div.opt-con div.row div div p {
 
 section.why-con div.video {
   margin-bottom: 150px;
+  overflow: hidden;
 }
 
 section.why-con div.video video {
