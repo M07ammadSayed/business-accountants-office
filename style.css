@@ -759,10 +759,13 @@ section.services-provided div:last-of-type {
             flex-direction: column !important;
   }
   section.services-provided div div:last-child div {
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: column !important;
-            flex-direction: column !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   section.services-provided div div:last-child div span {
     font-size: 20px;
