@@ -752,15 +752,6 @@ section.services-provided div:last-of-type {
         -ms-flex-direction: column-reverse !important;
             flex-direction: column-reverse !important;
   }
-  section.services-provided div div div span {
-    font-size: 20px;
-  }
-  section.services-provided div div div h2 {
-    font-size: 20px;
-  }
-  section.services-provided div div p {
-    font-size: 14px;
-  }
   section.services-provided div div:last-child {
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;
@@ -772,6 +763,15 @@ section.services-provided div:last-of-type {
     -webkit-box-direction: normal !important;
         -ms-flex-direction: column !important;
             flex-direction: column !important;
+  }
+  section.services-provided div div:last-child div span {
+    font-size: 20px;
+  }
+  section.services-provided div div:last-child div h2 {
+    font-size: 20px;
+  }
+  section.services-provided div div:last-child p {
+    font-size: 14px;
   }
 }
 
