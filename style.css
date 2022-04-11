@@ -250,10 +250,12 @@ section.landing div a button:focus {
 @media (min-width: 0) and (max-width: 991.98px) {
   section.landing div h1 {
     font-size: 25px;
+    padding: 0 30px;
   }
   section.landing div p {
     font-size: 17px;
     margin-bottom: 50px;
+    padding: 0 30px;
   }
 }
 
@@ -460,6 +462,7 @@ section.why-con div.video div div svg {
 @media (min-width: 0) and (max-width: 991.98px) {
   section.why-con p.why-h1 {
     font-size: 25px;
+    top: -15vh;
   }
   section.why-con p.why-h1 span img {
     position: absolute;
@@ -759,20 +762,22 @@ section.services-provided div:last-of-type {
             flex-direction: column !important;
   }
   section.services-provided div div:last-child div {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
   }
   section.services-provided div div:last-child div span {
     font-size: 20px;
   }
   section.services-provided div div:last-child div h2 {
+    display: inline-block;
     width: 100%;
     font-size: 20px;
+    text-align: center;
   }
   section.services-provided div div:last-child p {
     font-size: 14px;

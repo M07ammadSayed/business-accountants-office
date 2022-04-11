@@ -175,9 +175,11 @@ section.landing
         div
             h1
                 font-size: 25px
+                padding: 0 30px
             p
                 font-size: 17px
                 margin-bottom: 50px
+                padding: 0 30px
 
 section.why-con
     position: relative
@@ -293,6 +295,7 @@ section.why-con
     section.why-con
         p.why-h1
             font-size: 25px
+            top: -15vh
             span
                 img
                     position: absolute
@@ -471,13 +474,15 @@ section.services-provided
                 &:last-child
                     flex-direction: column !important
                     div
-                        flex-direction: column
-                        justify-content: center
+                        flex-direction: column !important
+                        justify-content: center !important
                         span
                             font-size: 20px
                         h2
+                            display: inline-block
                             width: 100%
                             font-size: 20px
+                            text-align: center
                     p
                         font-size: 14px
 
