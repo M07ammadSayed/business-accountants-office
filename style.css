@@ -768,6 +768,7 @@ section.services-provided div:last-of-type {
     font-size: 20px;
   }
   section.services-provided div div:last-child div h2 {
+    width: 100%;
     font-size: 20px;
   }
   section.services-provided div div:last-child p {
