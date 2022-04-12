@@ -138,8 +138,8 @@ nav ul a li:hover {
             margin-inline-start: 20px;
   }
   nav div a img {
-    max-width: 100%;
-    height: 46.295px;
+    max-width: 80%;
+    height: 26.295px;
     cursor: pointer;
   }
   nav div.bars {
