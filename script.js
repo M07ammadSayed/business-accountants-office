@@ -34,10 +34,10 @@ document.querySelector("div#play-bu div:last-child").onclick = function () {
 };
 
 document.querySelector(".bars").onclick = function () {
-    this.style.color = "#E4E6EB !important";
-    document.querySelector("ul.mo-nav").style.transform = "translateY(80.7px)";
-    if (this.style.color === "#E4E6EBE") {
-        document.querySelector("ul.mo-nav").style.transform = "translateY(-100vh)";
+    if (document.querySelector("nav ul").style.top !== "80.7px") {
+        document.querySelector("nav ul").style.top = "80.7px";
+    } else {
+        document.querySelector("nav ul").style.top = "-90vh";
     }
 };
 
