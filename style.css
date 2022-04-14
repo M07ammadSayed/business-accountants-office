@@ -523,7 +523,7 @@ section.why-con div.video div div svg {
   color: #F48C06 !important;
 }
 
-@media (min-width: 0) and (max-width: 991.98px) {
+@media (max-width: 991.98px) {
   section.why-con p.why-h1 {
     font-size: 25px;
     top: -15vh;
@@ -532,6 +532,32 @@ section.why-con div.video div div svg {
     position: absolute;
     width: 70px;
     height: 35px;
+  }
+  section.why-con div.opt-con {
+    margin: 50px 0 50px 0;
+  }
+  section.why-con div.opt-con div.row div {
+    margin: 15px 0 !important;
+  }
+  section.why-con div.opt-con div.row div div:hover {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+  section.why-con div.opt-con div.row div div:hover span.br {
+    top: 85px;
+  }
+  section.why-con div.opt-con div.row div div span.br {
+    height: 55px;
+    top: 25.5px;
+  }
+  section.why-con div.opt-con div.row div div span.br-2 {
+    top: 35.5px;
+  }
+  section.why-con div.opt-con div.row div div h5 {
+    font-size: 18px;
+  }
+  section.why-con div.opt-con div.row div div p {
+    font-size: 13px;
   }
   section.why-con div.video video {
     width: 95%;
@@ -1110,26 +1136,42 @@ section.prices-con div.prices-details div.row div button::before {
   z-index: -11;
 }
 
-footer {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #08062B !important;
-  overflow: hidden;
-  -webkit-padding-before: 100px;
-          padding-block-start: 100px;
+@media (max-width: 991.98px) {
+  section.prices-con div.prices-header div h1 {
+    font-size: 25px;
+  }
+  section.prices-con div.prices-header div img {
+    position: absolute;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 250px;
+    height: 50px;
+  }
+  section.prices-con div.prices-header p {
+    font-size: 14px;
+  }
+  section.prices-con div.prices-details div.row div div span {
+    font-size: 20px;
+    -webkit-margin-after: 50px;
+            margin-block-end: 50px;
+  }
+  section.prices-con div.prices-details div.row div div ul li {
+    font-size: 15px;
+  }
+  section.prices-con div.prices-details div.row div button {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 10px 15px;
+    font-size: 20px;
+  }
 }
 
-footer div.row {
+footer {
   position: relative;
   width: 100%;
   height: -webkit-fit-content;
@@ -1144,6 +1186,26 @@ footer div.row {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #08062B !important;
+  overflow: hidden;
+  -webkit-padding-before: 150px;
+          padding-block-start: 150px;
+}
+
+footer div.row {
+  position: relative;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
   margin: 0 !important;
   padding: 0 !important;
 }
@@ -1161,8 +1223,8 @@ footer div.row div.footer-details {
           align-items: center;
   margin: 0 !important;
   padding: 0 !important;
-  -webkit-margin-after: 50px !important;
-          margin-block-end: 50px !important;
+  -webkit-margin-after: 150px !important;
+          margin-block-end: 150px !important;
 }
 
 footer div.row div.footer-details div.footer-details-con {
@@ -1239,8 +1301,8 @@ footer div.row div.footer-details div.footer-details-con div:last-child {
           align-items: center;
 }
 
-footer div.footer-dec {
-  position: absolute;
+footer div.row div.footer-dec {
+  position: relative;
   width: 100%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -1258,9 +1320,19 @@ footer div.footer-dec {
   bottom: 0;
 }
 
-footer div.footer-dec span {
+footer div.row div.footer-dec span {
   color: #554F4F;
   font-weight: 700;
   font-size: 18px;
+}
+
+@media (max-width: 991.98px) {
+  footer div.row div.footer-details:first-child {
+    -webkit-margin-after: 50px !important;
+            margin-block-end: 50px !important;
+  }
+  footer div.row div.footer-details img {
+    width: 300px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

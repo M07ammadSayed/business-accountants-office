@@ -335,7 +335,7 @@ section.why-con
                 svg
                     color: $main-color !important
 
-@media (min-width: 0) and (max-width: 991.98px)
+@media (max-width: 991.98px)
     section.why-con
         p.why-h1
             font-size: 25px
@@ -345,6 +345,25 @@ section.why-con
                     position: absolute
                     width: 70px
                     height: 35px
+        div.opt-con
+            margin: 50px 0 50px 0
+            div.row
+                div
+                    margin: 15px 0 !important
+                    div
+                        &:hover
+                            transform: translateY(-15px)
+                            span.br
+                                top: 85px
+                        span.br
+                            height: 55px
+                            top: 25.5px
+                        span.br-2
+                            top: 35.5px
+                        h5
+                            font-size: 18px
+                        p
+                            font-size: 13px
         div.video
             video
                 width: 95%
@@ -681,81 +700,119 @@ section.prices-con
                         transition: .3s
                         z-index: -11
 
+@media (max-width: 991.98px)
+    section.prices-con
+        div.prices-header
+            div
+                h1
+                    font-size: 25px
+                img
+                    position: absolute
+                    display: inline-flex
+                    width: 250px
+                    height: 50px
+            p
+                font-size: 14px
+        div.prices-details
+            div.row
+                div
+                    div
+                        span
+                            font-size: 20px
+                            margin-block-end: 50px
+                        ul
+                            li
+                                font-size: 15px
+                    button
+                        width: fit-content
+                        height: fit-content
+                        padding: 10px 15px
+                        font-size: 20px
+
 footer
     position: relative
     width: 100%
-    height: 100vh
+    height: fit-content
     display: flex
     justify-content: center
     align-items: center
     background-color: $secondary-color !important
     overflow: hidden
-    padding-block-start: 100px
+    padding-block-start: 150px
     div.row
         position: relative
         width: 100%
         height: fit-content
         display: flex
-        justify-content: center
         align-items: center
+        align-content: space-between
         margin: 0 !important
         padding: 0 !important
         div.footer-details
+            position: relative
+            display: flex
+            justify-content: center
+            align-items: center
+            margin: 0 !important
+            padding: 0 !important
+            margin-block-end: 150px !important
+            div.footer-details-con
                 position: relative
+                width: fit-content
+                height: 150px
                 display: flex
-                justify-content: center
-                align-items: center
+                flex-direction: column
+                justify-content: space-between
+                align-items: flex-start
                 margin: 0 !important
                 padding: 0 !important
-                margin-block-end: 50px !important
-                div.footer-details-con
-                    position: relative
-                    width: fit-content
-                    height: 150px
+                div
                     display: flex
-                    flex-direction: column
-                    justify-content: space-between
-                    align-items: flex-start
-                    margin: 0 !important
-                    padding: 0 !important
-                    div
+                    align-items: center
+                    svg
+                        display: inline-block
+                        width: 25px
+                        height: 25px
+                        color: #DCDDE2
+                        margin-inline-end: 30px
+                        transition: .3s
+                    span
+                        position: relative
+                        width: fit-content
+                        height: fit-content
+                        font-weight: 700
+                        color: #DCDDE2
+                        top: 3px
+                    a
+                        &:hover
+                            svg
+                                color: $main-color
+                    &:last-child
+                        position: relative
+                        width: 100%
                         display: flex
+                        justify-content: center
                         align-items: center
-                        svg
-                            display: inline-block
-                            width: 25px
-                            height: 25px
-                            color: #DCDDE2
-                            margin-inline-end: 30px
-                            transition: .3s
-                        span
-                            position: relative
-                            width: fit-content
-                            height: fit-content
-                            font-weight: 700
-                            color: #DCDDE2
-                            top: 3px
-                        a
-                            &:hover
-                                svg
-                                    color: $main-color
-                        &:last-child
-                            position: relative
-                            width: 100%
-                            display: flex
-                            justify-content: center
-                            align-items: center
-    div.footer-dec
-        position: absolute
-        width: 100%
-        height: fit-content
-        display: flex
-        justify-content: space-around
-        align-items: center
-        padding: 20px 0 !important
-        background-color: $main-color
-        bottom: 0
-        span
-            color: #554F4F
-            font-weight: 700
-            font-size: 18px
+        div.footer-dec
+            position: relative
+            width: 100%
+            height: fit-content
+            display: flex
+            justify-content: space-around
+            align-items: center
+            padding: 20px 0 !important
+            background-color: $main-color
+            bottom: 0
+            span
+                color: #554F4F
+                font-weight: 700
+                font-size: 18px
+
+@media (max-width: 991.98px)
+    footer
+        div.row
+            div.footer-details
+                &:first-child
+                    margin-block-end: 50px !important
+                img
+                    width: 300px
