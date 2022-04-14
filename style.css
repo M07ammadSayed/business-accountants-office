@@ -1330,7 +1330,7 @@ footer div.row div.footer-dec span {
             margin-block-end: 50px !important;
   }
   footer div.row div.footer-details img {
-    max-width: 95% !important;
+    max-width: calc(100% - 100px) !important;
   }
   footer div.row div.footer-dec {
     -webkit-box-pack: center;
@@ -1341,7 +1341,6 @@ footer div.row div.footer-dec span {
     display: block;
     width: 100%;
     text-align: center;
-    padding: 5px 0 0 !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
