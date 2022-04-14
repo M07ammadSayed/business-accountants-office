@@ -1337,6 +1337,7 @@ footer div.row div.footer-dec span {
             margin-block-end: 20px !important;
   }
   footer div.row div.footer-details img {
+    max-width: 300px;
     padding: 0 20px !important;
   }
   footer div.row div.footer-dec {
