@@ -58,12 +58,11 @@ nav
     background-color: $secondary-color
     z-index: 9998
     div
-        line-height: 80.7px
+        width: 250px
         margin-inline-start: 50px
         a
             img
                 max-width: 100%
-                height: 46.295px
                 cursor: pointer
     div.bars
         display: none
@@ -94,24 +93,19 @@ nav
 @media (max-width: 991.98px)
     nav
         div
-            line-height: 80.7px
+            width: 200px
             margin-inline-start: 20px
-            a
-                img
-                    max-width: 80%
-                    height: 26.295px
-                    cursor: pointer
         div.bars
             display: block
+            width: fit-content
             position: relative
-            top: calc(50% - 25.75px)
             left: 20px
             margin: 0 !important
             padding: 0 !important
             cursor: pointer
             svg
                 color: #fff
-                font-size: 42px
+                font-size: 32px
         ul
             position: absolute
             width: 100%
@@ -219,11 +213,9 @@ section.landing
         div
             h1
                 font-size: 25px
-                padding: 0 10px
             p
-                font-size: 17px
+                font-size: 18px
                 margin-bottom: 50px
-                padding: 0 10px
 
 section.why-con
     position: relative
