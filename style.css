@@ -814,7 +814,7 @@ section.services-provided div:last-of-type {
           flex-direction: row;
 }
 
-@media (min-width: 0) and (max-width: 991.98px) {
+@media (max-width: 991.98px) {
   section.services-provided h1 {
     font-size: 25px;
     margin-bottom: 25px;
@@ -825,12 +825,12 @@ section.services-provided div:last-of-type {
     top: 5px;
   }
   section.services-provided h6:first-of-type {
-    font-size: 17px;
+    font-size: 18px;
     margin-bottom: 40px;
   }
   section.services-provided h6:last-of-type {
     width: 95%;
-    font-size: 12px;
+    font-size: 13px;
     margin-bottom: 50px;
   }
   section.services-provided div {
@@ -838,6 +838,9 @@ section.services-provided div:last-of-type {
     -webkit-box-direction: reverse !important;
         -ms-flex-direction: column-reverse !important;
             flex-direction: column-reverse !important;
+  }
+  section.services-provided div div {
+    width: 100%;
   }
   section.services-provided div div:first-child img {
     width: 100%;
@@ -869,7 +872,7 @@ section.services-provided div:last-of-type {
   }
   section.services-provided div div:last-child p {
     font-size: 14px;
-    padding: 0 50px !important;
+    padding: 0 10px !important;
   }
 }
 
@@ -1330,7 +1333,7 @@ footer div.row div.footer-dec span {
             margin-block-end: 50px !important;
   }
   footer div.row div.footer-details img {
-    max-width: 576px !important;
+    max-width: 566px !important;
   }
   footer div.row div.footer-dec {
     -webkit-box-pack: center;
