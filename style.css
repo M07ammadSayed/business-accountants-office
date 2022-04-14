@@ -1329,7 +1329,7 @@ footer div.row div.footer-dec span {
   }
   footer div.row div.footer-details img {
     max-width: 300px;
-    padding: 0 50px !important;
+    padding: 0 10px !important;
   }
   footer div.row div.footer-dec {
     -webkit-box-pack: end;
