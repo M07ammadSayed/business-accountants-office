@@ -1320,12 +1320,17 @@ footer div.row div.footer-dec span {
 }
 
 @media (max-width: 991.98px) {
+  footer div.row div.footer-details {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
   footer div.row div.footer-details:first-child {
     -webkit-margin-after: 50px !important;
             margin-block-end: 50px !important;
   }
   footer div.row div.footer-details img {
-    max-width: 100%;
     padding: 0 10px !important;
   }
   footer div.row div.footer-dec {
