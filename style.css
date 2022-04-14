@@ -1326,15 +1326,15 @@ footer div.row div.footer-dec span {
 
 @media (max-width: 991.98px) {
   footer {
-    -webkit-padding-before: 100px;
-            padding-block-start: 100px;
+    -webkit-padding-before: 50px;
+            padding-block-start: 50px;
   }
   footer div.row div.footer-details {
     width: 100%;
   }
   footer div.row div.footer-details:first-child {
-    -webkit-margin-after: 50px !important;
-            margin-block-end: 50px !important;
+    -webkit-margin-after: 30px !important;
+            margin-block-end: 30px !important;
   }
   footer div.row div.footer-details img {
     padding: 10px !important;
