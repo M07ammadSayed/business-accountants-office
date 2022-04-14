@@ -1317,7 +1317,6 @@ footer div.row div.footer-dec {
           align-items: center;
   padding: 20px 0 !important;
   background-color: #F48C06;
-  bottom: 0;
 }
 
 footer div.row div.footer-dec span {
@@ -1332,7 +1331,16 @@ footer div.row div.footer-dec span {
             margin-block-end: 50px !important;
   }
   footer div.row div.footer-details img {
-    width: 300px;
+    max-width: 100%;
+    padding: 0 10px !important;
+  }
+  footer div.row div.footer-dec {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  footer div.row div.footer-dec span {
+    display: inline-block;
   }
 }
 /*# sourceMappingURL=style.css.map */
