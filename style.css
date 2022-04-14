@@ -1336,7 +1336,7 @@ footer div.row div.footer-dec span {
             justify-content: flex-end;
   }
   footer div.row div.footer-dec span {
-    display: inline-block;
+    display: block;
   }
 }
 /*# sourceMappingURL=style.css.map */
