@@ -1328,8 +1328,7 @@ footer div.row div.footer-dec span {
             margin-block-end: 50px !important;
   }
   footer div.row div.footer-details img {
-    max-width: 650px;
-    padding: 0 10px !important;
+    max-width: 600px;
   }
   footer div.row div.footer-dec {
     -webkit-box-pack: end;
