@@ -1326,8 +1326,8 @@ footer div.row div.footer-dec span {
 
 @media (max-width: 991.98px) {
   footer {
-    -webkit-padding-before: 50px;
-            padding-block-start: 50px;
+    -webkit-padding-before: 100px;
+            padding-block-start: 100px;
   }
   footer div.row div.footer-details {
     width: 100%;
@@ -1337,7 +1337,7 @@ footer div.row div.footer-dec span {
             margin-block-end: 30px !important;
   }
   footer div.row div.footer-details img {
-    padding: 10px !important;
+    padding: 20px !important;
   }
   footer div.row div.footer-dec {
     -webkit-box-pack: center;
