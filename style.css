@@ -156,8 +156,8 @@ nav ul a li:hover {
   nav ul {
     position: absolute;
     width: 100%;
-    height: 100vh;
-    height: calc(100vh - 80.7px);
+    height: 85vh;
+    height: calc(85vh - 80.7px);
     top: 80.7px;
     display: -webkit-box;
     display: -ms-flexbox;
