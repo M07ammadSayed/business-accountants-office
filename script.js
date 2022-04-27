@@ -1,9 +1,3 @@
-window.onunload = function () {
-    if (window.scrollY > 0) {
-        window.scroll(0, 0);
-    }
-};
-
 window.onscroll = function () {
     if (window.scrollY > 200) {
         document.getElementById("bi").style.bottom = "15px";
@@ -34,11 +28,18 @@ document.querySelector("div#play-bu div:last-child").onclick = function () {
 };
 
 document.querySelector(".bars").onclick = function () {
-    if (document.querySelector("nav ul").style.top !== "80.7px") {
-        document.querySelector("nav ul").style.top = "80.7px";
+    if (document.querySelector("nav ul").style.transform !== "translateY(0px)") {
+        document.querySelector("nav ul").style.transform = "translateY(0px)";
     } else {
-        document.querySelector("nav ul").style.top = "-90vh";
+        document.querySelector("nav ul").style.transform = "translateY(-100vh)";
     }
 };
+
+
+window.onunload = function () {
+    if (window.scrollY > 0) {
+        window.scroll(0, 0);
+    }
+}();
 
 new WOW().init();

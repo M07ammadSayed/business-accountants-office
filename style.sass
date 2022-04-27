@@ -78,6 +78,7 @@ nav
         list-style: none
         margin-inline-end: 50px
         transition: .5s
+        transform: translateY(0px)
         a
             text-decoration: none
             color: #E4E6EB
@@ -109,8 +110,9 @@ nav
         ul
             position: absolute
             width: 100%
+            height: 100vh
             height: calc(100vh - 80.7px)
-            top: -90vh
+            top: 80.7px
             display: flex
             flex-direction: column
             justify-content: space-around
@@ -119,6 +121,8 @@ nav
             padding: 0 !important
             background-color: $main-color
             z-index: 9999
+            transform: translateY(-100vh)
+            transition: .5s
             li
                 padding: 0
                 border-bottom: 0
@@ -240,98 +244,103 @@ section.why-con
                 position: absolute
                 width: 75px
                 height: 40px
-    div.opt-con
-        position: relative
+    div.why-con2
         width: 100%
-        height: fit-content
-        margin: 50px 0 100px 0
-        background-color: $primary-bg
-        div.row
+        overflow: hidden
+        div.opt-con
             position: relative
             width: 100%
+            height: fit-content
+            margin: 50px 0 100px 0
+            background-color: $primary-bg
+            div.row
+                position: relative
+                width: 100%
+                div
+                    position: relative
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    background-color: $primary-bg !important
+                    margin: 20px 0 !important
+                    div
+                        position: relative
+                        width: 260px
+                        height: 189.38px
+                        display: flex
+                        flex-direction: column
+                        align-items: flex-start
+                        background-color: $primary-bg !important
+                        transition: transform .3s linear
+                        margin: 0 !important
+                        padding: 0 !important
+                        &:hover
+                            transform: translateY(-20px)
+                            span.br
+                                top: 85px
+                        span.br
+                            width: 5px
+                            height: 55px
+                            background-color: $main-color
+                            position: absolute
+                            right: 0
+                            top: 27.5px
+                            transition: top .3s linear
+                        h5
+                            font-weight: 700
+                            margin: 30px 20px 14px
+                            cursor: default
+                        p
+                            font-size: 14px
+                            font-weight: 400
+                            color: $secondary-text
+                            margin: 14px 20px 40px
+        div.video
+            width: 100%
+            display: flex
+            justify-content: center
+            margin-bottom: 150px
+            video
+                width: 700px
+                height: 400px
             div
                 position: relative
                 display: flex
                 justify-content: center
                 align-items: center
-                background-color: $primary-bg !important
-                margin: 20px 0 !important
-                div
-                    position: relative
-                    width: 260px
-                    height: 189.38px
-                    display: flex
-                    flex-direction: column
-                    align-items: flex-start
-                    background-color: $primary-bg !important
-                    transition: transform .3s linear
-                    margin: 0 !important
-                    padding: 0 !important
-                    &:hover
-                        transform: translateY(-20px)
-                        span.br
-                            top: 85px
-                    span.br
-                        width: 5px
-                        height: 55px
-                        background-color: $main-color
-                        position: absolute
-                        right: 0
-                        top: 27.5px
-                        transition: top .3s linear
-                    h5
-                        font-weight: 700
-                        margin: 30px 20px 14px
-                        cursor: default
-                    p
-                        font-size: 14px
-                        font-weight: 400
-                        color: $secondary-text
-                        margin: 14px 20px 40px
-    div.video
-        margin-bottom: 150px
-        video
-            width: 700px
-            height: 400px
-        div
-            position: relative
-            display: flex
-            justify-content: center
-            align-items: center
-            width: fit-content
-            height: fit-content
-            // background-color: $secondary-color
-            // cursor: pointer
-            top: -20px
-            right: 17.5px
-            div
-                position: absolute
                 width: fit-content
                 height: fit-content
-                background-color: $secondary-color
-                cursor: pointer
-                display: flex
-                justify-content: center
-                align-items: center
-                padding: 20px 30px !important
-                &:first-child
-                    display: block
-                &:last-child
-                    display: none
-                i.fa-play,i.fa-pause
-                    width: 15px
-                    height: 15px
-                    // fill: $main-color !important
+                // background-color: $secondary-color
+                // cursor: pointer
+                top: 185px
+                left: 295px
+                div
+                    position: absolute
+                    width: fit-content
+                    height: fit-content
+                    background-color: $secondary-color
                     cursor: pointer
-                    // padding: 20px 30px !important
-                svg
-                    color: $main-color !important
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    padding: 20px 30px !important
+                    &:first-child
+                        display: block
+                    &:last-child
+                        display: none
+                    i.fa-play,i.fa-pause
+                        width: 15px
+                        height: 15px
+                        // fill: $main-color !important
+                        cursor: pointer
+                        // padding: 20px 30px !important
+                    svg
+                        color: $main-color !important
 
 @media (max-width: 991.98px)
     section.why-con
         p.why-h1
             font-size: 25px
-            top: -15vh
             span
                 img
                     position: absolute

@@ -110,6 +110,8 @@ nav ul {
           margin-inline-end: 50px;
   -webkit-transition: .5s;
   transition: .5s;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
 }
 
 nav ul a {
@@ -154,8 +156,9 @@ nav ul a li:hover {
   nav ul {
     position: absolute;
     width: 100%;
+    height: 100vh;
     height: calc(100vh - 80.7px);
-    top: -90vh;
+    top: 80.7px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -172,6 +175,10 @@ nav ul a li:hover {
     padding: 0 !important;
     background-color: #F48C06;
     z-index: 9999;
+    -webkit-transform: translateY(-100vh);
+            transform: translateY(-100vh);
+    -webkit-transition: .5s;
+    transition: .5s;
   }
   nav ul li {
     padding: 0;
@@ -361,7 +368,12 @@ section.why-con p.why-h1 span img {
   height: 40px;
 }
 
-section.why-con div.opt-con {
+section.why-con div.why-con2 {
+  width: 100%;
+  overflow: hidden;
+}
+
+section.why-con div.why-con2 div.opt-con {
   position: relative;
   width: 100%;
   height: -webkit-fit-content;
@@ -371,12 +383,12 @@ section.why-con div.opt-con {
   background-color: #eee;
 }
 
-section.why-con div.opt-con div.row {
+section.why-con div.why-con2 div.opt-con div.row {
   position: relative;
   width: 100%;
 }
 
-section.why-con div.opt-con div.row div {
+section.why-con div.why-con2 div.opt-con div.row div {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -391,7 +403,7 @@ section.why-con div.opt-con div.row div {
   margin: 20px 0 !important;
 }
 
-section.why-con div.opt-con div.row div div {
+section.why-con div.why-con2 div.opt-con div.row div div {
   position: relative;
   width: 260px;
   height: 189.38px;
@@ -414,16 +426,16 @@ section.why-con div.opt-con div.row div div {
   padding: 0 !important;
 }
 
-section.why-con div.opt-con div.row div div:hover {
+section.why-con div.why-con2 div.opt-con div.row div div:hover {
   -webkit-transform: translateY(-20px);
           transform: translateY(-20px);
 }
 
-section.why-con div.opt-con div.row div div:hover span.br {
+section.why-con div.why-con2 div.opt-con div.row div div:hover span.br {
   top: 85px;
 }
 
-section.why-con div.opt-con div.row div div span.br {
+section.why-con div.why-con2 div.opt-con div.row div div span.br {
   width: 5px;
   height: 55px;
   background-color: #F48C06;
@@ -434,29 +446,36 @@ section.why-con div.opt-con div.row div div span.br {
   transition: top .3s linear;
 }
 
-section.why-con div.opt-con div.row div div h5 {
+section.why-con div.why-con2 div.opt-con div.row div div h5 {
   font-weight: 700;
   margin: 30px 20px 14px;
   cursor: default;
 }
 
-section.why-con div.opt-con div.row div div p {
+section.why-con div.why-con2 div.opt-con div.row div div p {
   font-size: 14px;
   font-weight: 400;
   color: #554F4F;
   margin: 14px 20px 40px;
 }
 
-section.why-con div.video {
+section.why-con div.why-con2 div.video {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 150px;
 }
 
-section.why-con div.video video {
+section.why-con div.why-con2 div.video video {
   width: 700px;
   height: 400px;
 }
 
-section.why-con div.video div {
+section.why-con div.why-con2 div.video div {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -473,11 +492,11 @@ section.why-con div.video div {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  top: -20px;
-  right: 17.5px;
+  top: 185px;
+  left: 295px;
 }
 
-section.why-con div.video div div {
+section.why-con div.why-con2 div.video div div {
   position: absolute;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -499,28 +518,27 @@ section.why-con div.video div div {
   padding: 20px 30px !important;
 }
 
-section.why-con div.video div div:first-child {
+section.why-con div.why-con2 div.video div div:first-child {
   display: block;
 }
 
-section.why-con div.video div div:last-child {
+section.why-con div.why-con2 div.video div div:last-child {
   display: none;
 }
 
-section.why-con div.video div div i.fa-play, section.why-con div.video div div i.fa-pause {
+section.why-con div.why-con2 div.video div div i.fa-play, section.why-con div.why-con2 div.video div div i.fa-pause {
   width: 15px;
   height: 15px;
   cursor: pointer;
 }
 
-section.why-con div.video div div svg {
+section.why-con div.why-con2 div.video div div svg {
   color: #F48C06 !important;
 }
 
 @media (max-width: 991.98px) {
   section.why-con p.why-h1 {
     font-size: 25px;
-    top: -15vh;
   }
   section.why-con p.why-h1 span img {
     position: absolute;
