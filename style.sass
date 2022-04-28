@@ -115,20 +115,26 @@ nav
             top: 80.7px
             display: flex
             flex-direction: column
-            justify-content: space-between
+            justify-content: center
             align-items: center
             margin: 0 !important
-            padding: 20px 0!important
+            padding: 0 !important
             background-color: $main-color
             z-index: 9999
             transform: translateY(-100vh)
             transition: .5s
-            li
-                padding: 0
-                border-bottom: 0
-                transition: .5s
-                &:hover
-                    color: $secondary-color
+            a
+                width: fit-content
+                height: fit-content
+                padding: 0 !important
+                margin: 40px 0 !important
+                li
+                    padding: 0 !important
+                    margin: 0 !important
+                    border-bottom: 0
+                    transition: .5s
+                    &:hover
+                        color: $secondary-color
 
 section.landing
     width: 100%
