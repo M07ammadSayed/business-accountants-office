@@ -81,11 +81,11 @@ nav div {
   width: 250px;
   -webkit-margin-start: 50px;
           margin-inline-start: 50px;
+  cursor: pointer;
 }
 
 nav div a img {
   max-width: 100%;
-  cursor: pointer;
 }
 
 nav div.bars {
@@ -250,19 +250,6 @@ section.landing::after {
   z-index: -1;
 }
 
-section.landing img {
-  position: absolute;
-  z-index: -2;
-  width: 100%;
-  height: calc(100vh - 80.7px);
-  top: 80.7px;
-  left: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -webkit-filter: brightness(50%);
-          filter: brightness(50%);
-}
-
 section.landing div {
   position: relative;
   display: -webkit-box;
@@ -284,7 +271,8 @@ section.landing div {
 section.landing div h1 {
   font-size: 40px;
   letter-spacing: 1.5px;
-  margin-bottom: 21.44px;
+  -webkit-margin-after: 21.44px;
+          margin-block-end: 21.44px;
   font-weight: 700;
   color: #E4E6EB;
   cursor: default;
@@ -293,7 +281,8 @@ section.landing div h1 {
 section.landing div p {
   font-size: 18px;
   letter-spacing: 1px;
-  margin-bottom: 50px;
+  -webkit-margin-after: 50px;
+          margin-block-end: 50px;
   font-weight: 400;
   color: #B0B3B8;
   cursor: default;
@@ -393,6 +382,7 @@ section.why-con div.why-con2 div.opt-con {
   height: fit-content;
   margin: 50px 0 100px 0;
   background-color: #eee;
+  overflow: hidden;
 }
 
 section.why-con div.why-con2 div.opt-con div.row {
@@ -411,8 +401,6 @@ section.why-con div.why-con2 div.opt-con div.row div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #eee !important;
-  margin: 20px 0 !important;
 }
 
 section.why-con div.why-con2 div.opt-con div.row div div {
@@ -472,7 +460,11 @@ section.why-con div.why-con2 div.opt-con div.row div div p {
 }
 
 section.why-con div.why-con2 div.video {
+  position: relative;
   width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -483,8 +475,7 @@ section.why-con div.why-con2 div.video {
 }
 
 section.why-con div.why-con2 div.video video {
-  width: 700px;
-  height: 400px;
+  max-width: 700px;
 }
 
 section.why-con div.why-con2 div.video div {
@@ -504,8 +495,8 @@ section.why-con div.why-con2 div.video div {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  top: 185px;
-  left: 295px;
+  -webkit-transform: translate(320px, 195px);
+          transform: translate(320px, 195px);
 }
 
 section.why-con div.why-con2 div.video div div {
@@ -596,9 +587,6 @@ section.why-con div.why-con2 div.video div div svg {
 section.services-provided {
   position: relative;
   width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -697,8 +685,7 @@ section.services-provided div div:hover img {
 
 section.services-provided div div img {
   position: relative;
-  width: 400px;
-  height: 300px;
+  max-width: 400px;
   -webkit-filter: grayscale(0.7);
           filter: grayscale(0.7);
   -webkit-transition: .3s;

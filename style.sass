@@ -60,17 +60,15 @@ nav
     div
         width: 250px
         margin-inline-start: 50px
+        cursor: pointer
         a
             img
                 max-width: 100%
-                cursor: pointer
     div.bars
         display: none
-        svg
     ul
         position: relative
         width: 48.948%
-        // height: 78px
         height: inherit
         display: flex
         justify-content: space-between
@@ -170,15 +168,6 @@ section.landing
         right: 0
         will-change: transform
         z-index: -1
-    img
-        position: absolute
-        z-index: -2
-        width: 100%
-        height: calc(100vh - 80.7px)
-        top: 80.7px
-        left: 0
-        object-fit: cover
-        filter: brightness(50%)
     div
         position: relative
         display: flex
@@ -189,14 +178,14 @@ section.landing
         h1
             font-size: 40px
             letter-spacing: 1.5px
-            margin-bottom: 21.44px
+            margin-block-end: 21.44px
             font-weight: 700
             color: #E4E6EB
             cursor: default
         p
             font-size: 18px
             letter-spacing: 1px
-            margin-bottom: 50px
+            margin-block-end: 50px
             font-weight: 400
             color: #B0B3B8
             cursor: default
@@ -259,6 +248,7 @@ section.why-con
             height: fit-content
             margin: 50px 0 100px 0
             background-color: $primary-bg
+            overflow: hidden
             div.row
                 position: relative
                 width: 100%
@@ -267,8 +257,6 @@ section.why-con
                     display: flex
                     justify-content: center
                     align-items: center
-                    background-color: $primary-bg !important
-                    margin: 20px 0 !important
                     div
                         position: relative
                         width: 260px
@@ -302,13 +290,14 @@ section.why-con
                             color: $secondary-text
                             margin: 14px 20px 40px
         div.video
+            position: relative
             width: 100%
+            height: fit-content
             display: flex
             justify-content: center
             margin-bottom: 150px
             video
-                width: 700px
-                height: 400px
+                max-width: 700px
             div
                 position: relative
                 display: flex
@@ -316,10 +305,7 @@ section.why-con
                 align-items: center
                 width: fit-content
                 height: fit-content
-                // background-color: $secondary-color
-                // cursor: pointer
-                top: 185px
-                left: 295px
+                transform: translate(320px, 195px)
                 div
                     position: absolute
                     width: fit-content
@@ -337,9 +323,7 @@ section.why-con
                     i.fa-play,i.fa-pause
                         width: 15px
                         height: 15px
-                        // fill: $main-color !important
                         cursor: pointer
-                        // padding: 20px 30px !important
                     svg
                         color: $main-color !important
 
@@ -382,7 +366,6 @@ section.why-con
 section.services-provided
     position: relative
     width: 100%
-    height: fit-content
     display: flex
     justify-content: center
     align-items: center
@@ -441,8 +424,8 @@ section.services-provided
                     transform: scale(1.05) rotate(3deg)
             img
                 position: relative
-                width: 400px
-                height: 300px
+                max-width: 400px
+                // height: 300px
                 filter: grayscale(.7)
                 transition: .3s
         div
