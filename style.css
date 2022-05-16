@@ -330,15 +330,9 @@ section.landing div a button:focus {
 section.why-con {
   position: relative;
   width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -347,6 +341,7 @@ section.why-con {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #eee;
+  padding: 100px 0 64px !important;
 }
 
 section.why-con p.why-h1 {
@@ -374,6 +369,8 @@ section.why-con p.why-h1 span img {
 section.why-con div.why-con2 {
   width: 100%;
   overflow: hidden;
+  -webkit-padding-after: 40px;
+          padding-block-end: 40px;
 }
 
 section.why-con div.why-con2 div.opt-con {
@@ -464,24 +461,27 @@ section.why-con div.why-con2 div.opt-con div.row div div p {
 section.why-con div.why-con2 div.video {
   position: relative;
   width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 150px;
 }
 
 section.why-con div.why-con2 div.video video {
-  max-width: 700px;
+  width: 700px;
+  height: 400px;
 }
 
 section.why-con div.why-con2 div.video div {
   position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -491,24 +491,12 @@ section.why-con div.why-con2 div.video div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  -webkit-transform: translate(320px, 195px);
-          transform: translate(320px, 195px);
 }
 
 section.why-con div.why-con2 div.video div div {
   position: absolute;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  width: 80px;
+  height: 60px;
   background-color: #08062B;
   cursor: pointer;
   display: -webkit-box;
@@ -520,7 +508,9 @@ section.why-con div.why-con2 div.video div div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 20px 30px !important;
+  top: 57.3vh;
+  left: calc(100vh - 40px);
+  text-align: center;
 }
 
 section.why-con div.why-con2 div.video div div:first-child {
@@ -538,12 +528,15 @@ section.why-con div.why-con2 div.video div div i.fa-play, section.why-con div.wh
 }
 
 section.why-con div.why-con2 div.video div div svg {
+  position: relative;
   color: #F48C06 !important;
+  top: 22.5px;
 }
 
 @media (max-width: 991.98px) {
   section.why-con p.why-h1 {
     font-size: 25px;
+    top: 0 !important;
   }
   section.why-con p.why-h1 span img {
     position: absolute;
@@ -577,12 +570,8 @@ section.why-con div.why-con2 div.video div div svg {
     font-size: 13px;
   }
   section.why-con div.video video {
-    width: 95%;
-    height: 300px;
-  }
-  section.why-con div.video div {
-    top: -20px;
-    right: 30px;
+    width: 100% !important;
+    padding: 0 20px !important;
   }
 }
 
@@ -604,6 +593,8 @@ section.services-provided {
           flex-direction: column;
   background-color: #eee;
   overflow: hidden;
+  -webkit-padding-after: 100px !important;
+          padding-block-end: 100px !important;
 }
 
 section.services-provided h1 {
@@ -730,10 +721,6 @@ section.services-provided div div div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -860,12 +847,10 @@ section.services-provided div:last-of-type {
         -ms-flex-direction: column-reverse !important;
             flex-direction: column-reverse !important;
   }
-  section.services-provided div div {
-    width: 100%;
-  }
   section.services-provided div div:first-child img {
-    width: 100%;
-    height: 100%;
+    width: 100% !important;
+    height: 100% !important;
+    padding: 0 20px !important;
   }
   section.services-provided div div:last-child {
     -webkit-box-orient: vertical !important;
@@ -874,26 +859,39 @@ section.services-provided div:last-of-type {
             flex-direction: column !important;
   }
   section.services-provided div div:last-child div {
-    -webkit-box-orient: vertical !important;
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    -webkit-box-orient: horizontal !important;
     -webkit-box-direction: normal !important;
-        -ms-flex-direction: column !important;
-            flex-direction: column !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
     -webkit-box-pack: center !important;
         -ms-flex-pack: center !important;
             justify-content: center !important;
   }
   section.services-provided div div:last-child div span {
-    font-size: 20px;
+    width: -webkit-fit-content !important;
+    width: -moz-fit-content !important;
+    width: fit-content !important;
+    -webkit-margin-after: 0 !important;
+            margin-block-end: 0 !important;
+    font-size: 20px !important;
   }
   section.services-provided div div:last-child div h2 {
-    display: inline-block;
-    width: 100%;
-    font-size: 20px;
-    text-align: center;
+    width: -webkit-fit-content !important;
+    width: -moz-fit-content !important;
+    width: fit-content !important;
+    font-size: 20px !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
   section.services-provided div div:last-child p {
     font-size: 14px;
-    padding: 0 10px !important;
+    padding: 0 20px !important;
   }
 }
 
@@ -1333,7 +1331,7 @@ footer div.row div.footer-dec {
           align-items: center;
   padding: 20px 0 !important;
   background-color: #F48C06;
-  bottom: -105px;
+  top: 72.7vh;
 }
 
 footer div.row div.footer-dec span {

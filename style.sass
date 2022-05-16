@@ -4,7 +4,7 @@ $secondary-color: #08062B
 $primary-text: #000
 $secondary-text: #554F4F
 $primary-bg: #eee
-$secondary-bg: #000
+// $secondary-bg: #000
 
 *
     padding: 0
@@ -221,12 +221,11 @@ section.landing
 section.why-con
     position: relative
     width: 100%
-    height: fit-content
     display: flex
-    justify-content: center
     align-items: center
     flex-direction: column
     background-color: $primary-bg
+    padding: 100px 0 64px !important
     p.why-h1
         position: absolute
         font-size: 30px
@@ -244,6 +243,7 @@ section.why-con
     div.why-con2
         width: 100%
         overflow: hidden
+        padding-block-end: 40px
         div.opt-con
             position: relative
             width: 100%
@@ -294,30 +294,30 @@ section.why-con
         div.video
             position: relative
             width: 100%
-            height: fit-content
             display: flex
             justify-content: center
-            margin-bottom: 150px
             video
-                max-width: 700px
+                width: 700px
+                height: 400px
             div
                 position: relative
+                width: fit-content
+                height: fit-content
                 display: flex
                 justify-content: center
                 align-items: center
-                width: fit-content
-                height: fit-content
-                transform: translate(320px, 195px)
                 div
                     position: absolute
-                    width: fit-content
-                    height: fit-content
+                    width: 80px
+                    height: 60px
                     background-color: $secondary-color
                     cursor: pointer
                     display: flex
                     justify-content: center
                     align-items: center
-                    padding: 20px 30px !important
+                    top: 57.3vh
+                    left: calc(100vh - 40px)
+                    text-align: center
                     &:first-child
                         display: block
                     &:last-child
@@ -327,12 +327,15 @@ section.why-con
                         height: 15px
                         cursor: pointer
                     svg
+                        position: relative
                         color: $main-color !important
+                        top: 22.5px
 
 @media (max-width: 991.98px)
     section.why-con
         p.why-h1
             font-size: 25px
+            top: 0 !important
             span
                 img
                     position: absolute
@@ -359,11 +362,11 @@ section.why-con
                             font-size: 13px
         div.video
             video
-                width: 95%
-                height: 300px
-            div
-                top: -20px
-                right: 30px
+                width: 100% !important
+                padding: 0 20px !important
+            // div
+            //     top: -20px
+            //     right: 30px
 
 section.services-provided
     position: relative
@@ -374,6 +377,7 @@ section.services-provided
     flex-direction: column
     background-color: $primary-bg
     overflow: hidden
+    padding-block-end: 100px !important
     h1
         position: relative
         font-size: 30px
@@ -447,7 +451,6 @@ section.services-provided
                 width: 100%
                 height: fit-content
                 display: flex
-                flex-direction: row
                 justify-content: flex-start
                 align-items: center
                 margin-bottom: 30px
@@ -527,26 +530,30 @@ section.services-provided
         div
             flex-direction: column-reverse !important
             div
-                width: 100%
                 &:first-child
                     img
-                        width: 100%
-                        height: 100%
+                        width: 100% !important
+                        height: 100% !important
+                        padding: 0 20px !important
                 &:last-child
                     flex-direction: column !important
                     div
-                        flex-direction: column !important
+                        height: fit-content !important
+                        align-items: center !important
+                        flex-direction: row !important
                         justify-content: center !important
                         span
-                            font-size: 20px
+                            width: fit-content !important
+                            margin-block-end: 0 !important
+                            font-size: 20px !important
                         h2
-                            display: inline-block
-                            width: 100%
-                            font-size: 20px
-                            text-align: center
+                            width: fit-content !important
+                            font-size: 20px !important
+                            margin: 0 !important
+                            padding: 0 !important
                     p
                         font-size: 14px
-                        padding: 0 10px !important
+                        padding: 0 20px !important
 
 section.prices-con
     position: relative
@@ -796,7 +803,7 @@ footer
             align-items: center
             padding: 20px 0 !important
             background-color: $main-color
-            bottom: -105px
+            top: 72.7vh
             span
                 color: #554F4F
                 font-weight: 700
