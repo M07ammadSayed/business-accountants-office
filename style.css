@@ -94,7 +94,7 @@ nav div.bars {
 
 nav ul {
   position: relative;
-  width: 48.948%;
+  width: 40%;
   height: inherit;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -108,6 +108,7 @@ nav ul {
   list-style: none;
   -webkit-margin-end: 50px;
           margin-inline-end: 50px;
+  padding: 0 !important;
   -webkit-transition: .5s;
   transition: .5s;
   -webkit-transform: translateY(0px);
@@ -848,9 +849,8 @@ section.services-provided div:last-of-type {
             flex-direction: column-reverse !important;
   }
   section.services-provided div div:first-child img {
-    width: 100% !important;
+    width: 95% !important;
     height: 100% !important;
-    padding: 0 20px !important;
   }
   section.services-provided div div:last-child {
     -webkit-box-orient: vertical !important;
@@ -890,8 +890,8 @@ section.services-provided div:last-of-type {
     padding: 0 !important;
   }
   section.services-provided div div:last-child p {
+    width: 95% !important;
     font-size: 14px;
-    padding: 0 20px !important;
   }
 }
 
@@ -1194,35 +1194,44 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background-color: #08062B !important;
   overflow: hidden;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 footer div.row {
   position: relative;
   width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -ms-flex-line-pack: justify;
       align-content: space-between;
   margin: 0 !important;
   padding: 0 !important;
 }
 
-footer div.row div.footer-details {
+footer div.row div.contact-container {
+  width: 100%;
+  height: calc(100% - 67px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer div.row div.contact-container div.footer-details {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1235,11 +1244,9 @@ footer div.row div.footer-details {
           align-items: center;
   margin: 0 !important;
   padding: 0 !important;
-  -webkit-margin-after: 150px !important;
-          margin-block-end: 150px !important;
 }
 
-footer div.row div.footer-details div.footer-details-con {
+footer div.row div.contact-container div.footer-details div.footer-details-con {
   position: relative;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -1262,7 +1269,7 @@ footer div.row div.footer-details div.footer-details-con {
   padding: 0 !important;
 }
 
-footer div.row div.footer-details div.footer-details-con div {
+footer div.row div.contact-container div.footer-details div.footer-details-con div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1271,7 +1278,7 @@ footer div.row div.footer-details div.footer-details-con div {
           align-items: center;
 }
 
-footer div.row div.footer-details div.footer-details-con div svg {
+footer div.row div.contact-container div.footer-details div.footer-details-con div svg {
   display: inline-block;
   width: 25px;
   height: 25px;
@@ -1282,7 +1289,7 @@ footer div.row div.footer-details div.footer-details-con div svg {
   transition: .3s;
 }
 
-footer div.row div.footer-details div.footer-details-con div span {
+footer div.row div.contact-container div.footer-details div.footer-details-con div span {
   position: relative;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -1295,11 +1302,11 @@ footer div.row div.footer-details div.footer-details-con div span {
   top: 2px;
 }
 
-footer div.row div.footer-details div.footer-details-con div a:hover svg {
+footer div.row div.contact-container div.footer-details div.footer-details-con div a:hover svg {
   color: #F48C06;
 }
 
-footer div.row div.footer-details div.footer-details-con div:last-child {
+footer div.row div.contact-container div.footer-details div.footer-details-con div:last-child {
   position: relative;
   width: 100%;
   display: -webkit-box;
@@ -1314,7 +1321,7 @@ footer div.row div.footer-details div.footer-details-con div:last-child {
 }
 
 footer div.row div.footer-dec {
-  position: absolute;
+  position: relative;
   width: 100%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -1322,8 +1329,6 @@ footer div.row div.footer-dec {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
@@ -1331,7 +1336,6 @@ footer div.row div.footer-dec {
           align-items: center;
   padding: 20px 0 !important;
   background-color: #F48C06;
-  top: 72.7vh;
 }
 
 footer div.row div.footer-dec span {
@@ -1345,16 +1349,14 @@ footer div.row div.footer-dec span {
     -webkit-padding-before: 100px;
             padding-block-start: 100px;
   }
-  footer div.row div.footer-details {
-    width: 100%;
-  }
-  footer div.row div.footer-details:first-child {
-    -webkit-margin-after: 20px !important;
-            margin-block-end: 20px !important;
-  }
-  footer div.row div.footer-details img {
-    max-width: 400px;
-    padding: 0 20px !important;
+  footer div.row div.contact-container {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
   }
   footer div.row div.footer-dec {
     -webkit-box-pack: center;

@@ -68,13 +68,14 @@ nav
         display: none
     ul
         position: relative
-        width: 48.948%
+        width: 40%
         height: inherit
         display: flex
         justify-content: space-between
         align-items: center
         list-style: none
         margin-inline-end: 50px
+        padding: 0 !important
         transition: .5s
         transform: translateY(0px)
         a
@@ -532,9 +533,8 @@ section.services-provided
             div
                 &:first-child
                     img
-                        width: 100% !important
+                        width: 95% !important
                         height: 100% !important
-                        padding: 0 20px !important
                 &:last-child
                     flex-direction: column !important
                     div
@@ -552,8 +552,8 @@ section.services-provided
                             margin: 0 !important
                             padding: 0 !important
                     p
+                        width: 95% !important
                         font-size: 14px
-                        padding: 0 20px !important
 
 section.prices-con
     position: relative
@@ -735,75 +735,78 @@ footer
     width: 100%
     height: 100vh
     display: flex
-    justify-content: center
-    align-items: center
+    flex-direction: column
+    justify-content: space-between
     background-color: $secondary-color !important
     overflow: hidden
+    margin: 0 !important
+    padding: 0 !important
     div.row
         position: relative
         width: 100%
-        height: fit-content
+        height: 100vh
         display: flex
-        align-items: center
         align-content: space-between
         margin: 0 !important
         padding: 0 !important
-        div.footer-details
-            position: relative
+        div.contact-container
+            width: 100%
+            height: calc(100% - 67px)
             display: flex
-            justify-content: center
             align-items: center
-            margin: 0 !important
-            padding: 0 !important
-            margin-block-end: 150px !important
-            div.footer-details-con
+            div.footer-details
                 position: relative
-                width: fit-content
-                height: 150px
                 display: flex
-                flex-direction: column
-                justify-content: space-between
-                align-items: flex-start
+                justify-content: center
+                align-items: center
                 margin: 0 !important
                 padding: 0 !important
-                div
+                div.footer-details-con
+                    position: relative
+                    width: fit-content
+                    height: 150px
                     display: flex
-                    align-items: center
-                    svg
-                        display: inline-block
-                        width: 25px
-                        height: 25px
-                        color: #DCDDE2
-                        margin-inline-end: 30px
-                        transition: .3s
-                    span
-                        position: relative
-                        width: fit-content
-                        height: fit-content
-                        font-weight: 700
-                        color: #DCDDE2
-                        top: 2px
-                    a
-                        &:hover
-                            svg
-                                color: $main-color
-                    &:last-child
-                        position: relative
-                        width: 100%
+                    flex-direction: column
+                    justify-content: space-between
+                    align-items: flex-start
+                    margin: 0 !important
+                    padding: 0 !important
+                    div
                         display: flex
-                        justify-content: center
                         align-items: center
+                        svg
+                            display: inline-block
+                            width: 25px
+                            height: 25px
+                            color: #DCDDE2
+                            margin-inline-end: 30px
+                            transition: .3s
+                        span
+                            position: relative
+                            width: fit-content
+                            height: fit-content
+                            font-weight: 700
+                            color: #DCDDE2
+                            top: 2px
+                        a
+                            &:hover
+                                svg
+                                    color: $main-color
+                        &:last-child
+                            position: relative
+                            width: 100%
+                            display: flex
+                            justify-content: center
+                            align-items: center
         div.footer-dec
-            position: absolute
+            position: relative
             width: 100%
             height: fit-content
             display: flex
-            flex-wrap: wrap
             justify-content: space-around
             align-items: center
             padding: 20px 0 !important
             background-color: $main-color
-            top: 72.7vh
             span
                 color: #554F4F
                 font-weight: 700
@@ -813,13 +816,9 @@ footer
     footer
         padding-block-start: 100px
         div.row
-            div.footer-details
-                width: 100%
-                &:first-child
-                    margin-block-end: 20px !important
-                img
-                    max-width: 400px
-                    padding: 0 20px !important
+            div.contact-container
+                flex-direction: column !important
+                justify-content: center !important
             div.footer-dec
                 justify-content: center
                 span
