@@ -537,7 +537,7 @@ section.why-con div.why-con2 div.video div div svg {
 @media (max-width: 991.98px) {
   section.why-con p.why-h1 {
     font-size: 25px;
-    top: 0 !important;
+    top: -5vh !important;
   }
   section.why-con p.why-h1 span img {
     position: absolute;
@@ -849,8 +849,9 @@ section.services-provided div:last-of-type {
             flex-direction: column-reverse !important;
   }
   section.services-provided div div:first-child img {
-    width: 95% !important;
+    width: 90% !important;
     height: 100% !important;
+    padding: 0 50px !important;
   }
   section.services-provided div div:last-child {
     -webkit-box-orient: vertical !important;
@@ -890,8 +891,9 @@ section.services-provided div:last-of-type {
     padding: 0 !important;
   }
   section.services-provided div div:last-child p {
-    width: 95% !important;
+    width: 90% !important;
     font-size: 14px;
+    padding: 0 50px !important;
   }
 }
 
@@ -1194,13 +1196,6 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   background-color: #08062B !important;
   overflow: hidden;
   margin: 0 !important;
@@ -1221,14 +1216,14 @@ footer div.row {
 }
 
 footer div.row div.contact-container {
+  position: relative;
   width: 100%;
-  height: calc(100% - 67px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  top: 15vh;
 }
 
 footer div.row div.contact-container div.footer-details {
@@ -1248,9 +1243,6 @@ footer div.row div.contact-container div.footer-details {
 
 footer div.row div.contact-container div.footer-details div.footer-details-con {
   position: relative;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
   height: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1262,9 +1254,6 @@ footer div.row div.contact-container div.footer-details div.footer-details-con {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   margin: 0 !important;
   padding: 0 !important;
 }
@@ -1323,9 +1312,6 @@ footer div.row div.contact-container div.footer-details div.footer-details-con d
 footer div.row div.footer-dec {
   position: relative;
   width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1334,7 +1320,6 @@ footer div.row div.footer-dec {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 20px 0 !important;
   background-color: #F48C06;
 }
 
@@ -1342,13 +1327,10 @@ footer div.row div.footer-dec span {
   color: #554F4F;
   font-weight: 700;
   font-size: 18px;
+  padding: 20px 0;
 }
 
 @media (max-width: 991.98px) {
-  footer {
-    -webkit-padding-before: 100px;
-            padding-block-start: 100px;
-  }
   footer div.row div.contact-container {
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;
@@ -1357,16 +1339,22 @@ footer div.row div.footer-dec span {
     -webkit-box-pack: center !important;
         -ms-flex-pack: center !important;
             justify-content: center !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
   }
   footer div.row div.footer-dec {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
   }
   footer div.row div.footer-dec span {
-    display: block;
-    width: 100%;
     text-align: center;
+    padding: 5px 0 !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
