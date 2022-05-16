@@ -35,11 +35,13 @@ document.querySelector(".bars").onclick = function () {
     }
 };
 
-
-window.onunload = function () {
-    if (window.scrollY > 0) {
-        window.scroll(0, 0);
-    }
-}();
+const navElements = document.querySelectorAll("nav ul a");
+for (let i = 0; i < navElements.length; i++) {
+    navElements[i].addEventListener("click", function () {
+        if (document.documentElement.clientWidth <= 991.98) {
+            document.querySelector("nav ul").style.transform = "translateY(-100vh)";
+        }
+    });
+};
 
 new WOW().init();

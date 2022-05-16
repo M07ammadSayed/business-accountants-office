@@ -31,7 +31,7 @@ a.circle-up {
   position: fixed;
   bottom: -50px;
   right: 15px;
-  z-index: 9999;
+  z-index: 9998;
   cursor: pointer;
   -webkit-transition: opacity .5s ease-in-out, bottom .5s ease-in-out, -webkit-filter .2s ease-in-out;
   transition: opacity .5s ease-in-out, bottom .5s ease-in-out, -webkit-filter .2s ease-in-out;
@@ -52,7 +52,7 @@ a.circle-up svg.fa-circle-up {
   color: #F48C06;
   width: 40px;
   height: 40px;
-  z-index: 9999;
+  z-index: 9998;
   cursor: pointer;
   -webkit-transition: opacity .5s ease-in-out, bottom .5s ease-in-out, -webkit-filter .2s ease-in-out;
   transition: opacity .5s ease-in-out, bottom .5s ease-in-out, -webkit-filter .2s ease-in-out;
@@ -166,9 +166,8 @@ nav ul a li:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -182,14 +181,20 @@ nav ul a li:hover {
     transition: .5s;
   }
   nav ul a {
+    width: 100% !important;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    padding: 0 !important;
-    margin: 50px 0 !important;
+    padding: 30px 0 !important;
+    text-align: center;
+    -webkit-transition: .5s !important;
+    transition: .5s !important;
+  }
+  nav ul a:hover {
+    background-color: #08062B;
   }
   nav ul a li {
     padding: 0 !important;
@@ -197,9 +202,6 @@ nav ul a li:hover {
     border-bottom: 0;
     -webkit-transition: .5s;
     transition: .5s;
-  }
-  nav ul a li:hover {
-    color: #08062B;
   }
 }
 
@@ -611,6 +613,8 @@ section.services-provided h1 {
   color: #000;
   cursor: default;
   margin-bottom: 50px;
+  -webkit-padding-before: 100px;
+          padding-block-start: 100px;
 }
 
 section.services-provided h1 span {
@@ -1188,9 +1192,7 @@ section.prices-con div.prices-details div.row div button::before {
 footer {
   position: relative;
   width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1202,8 +1204,6 @@ footer {
           align-items: center;
   background-color: #08062B !important;
   overflow: hidden;
-  -webkit-padding-before: 150px;
-          padding-block-start: 150px;
 }
 
 footer div.row {
@@ -1316,7 +1316,7 @@ footer div.row div.footer-details div.footer-details-con div:last-child {
 }
 
 footer div.row div.footer-dec {
-  position: relative;
+  position: absolute;
   width: 100%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -1333,6 +1333,7 @@ footer div.row div.footer-dec {
           align-items: center;
   padding: 20px 0 !important;
   background-color: #F48C06;
+  bottom: -105px;
 }
 
 footer div.row div.footer-dec span {

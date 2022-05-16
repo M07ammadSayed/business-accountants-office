@@ -32,7 +32,7 @@ a.circle-up
     position: fixed
     bottom: -50px
     right: 15px
-    z-index: 9999
+    z-index: 9998
     cursor: pointer
     transition: filter .2s ease-in-out, opacity .5s ease-in-out, bottom .5s ease-in-out
     opacity: 0
@@ -44,7 +44,7 @@ a.circle-up
         color: $main-color
         width: 40px
         height: 40px
-        z-index: 9999
+        z-index: 9998
         cursor: pointer
         transition: filter .2s ease-in-out, opacity .5s ease-in-out, bottom .5s ease-in-out
 
@@ -113,7 +113,7 @@ nav
             top: 80.7px
             display: flex
             flex-direction: column
-            justify-content: center
+            justify-content: space-around
             align-items: center
             margin: 0 !important
             padding: 0 !important
@@ -122,17 +122,19 @@ nav
             transform: translateY(-100vh)
             transition: .5s
             a
+                width: 100% !important
                 width: fit-content
                 height: fit-content
-                padding: 0 !important
-                margin: 50px 0 !important
+                padding: 30px 0 !important
+                text-align: center
+                transition: .5s !important
+                &:hover
+                    background-color: $secondary-color
                 li
                     padding: 0 !important
                     margin: 0 !important
                     border-bottom: 0
                     transition: .5s
-                    &:hover
-                        color: $secondary-color
 
 section.landing
     width: 100%
@@ -379,6 +381,7 @@ section.services-provided
         color: $primary-text
         cursor: default
         margin-bottom: 50px
+        padding-block-start: 100px
         span
             position: relative
             display: inline-flex
@@ -723,13 +726,12 @@ section.prices-con
 footer
     position: relative
     width: 100%
-    height: fit-content
+    height: 100vh
     display: flex
     justify-content: center
     align-items: center
     background-color: $secondary-color !important
     overflow: hidden
-    padding-block-start: 150px
     div.row
         position: relative
         width: 100%
@@ -785,7 +787,7 @@ footer
                         justify-content: center
                         align-items: center
         div.footer-dec
-            position: relative
+            position: absolute
             width: 100%
             height: fit-content
             display: flex
@@ -794,6 +796,7 @@ footer
             align-items: center
             padding: 20px 0 !important
             background-color: $main-color
+            bottom: -105px
             span
                 color: #554F4F
                 font-weight: 700
