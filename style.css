@@ -670,6 +670,7 @@ section.services-provided div div {
   height: fit-content;
   overflow: hidden;
   background-color: #eee;
+  margin: 0 30px !important;
 }
 
 section.services-provided div div:hover img {
@@ -681,7 +682,8 @@ section.services-provided div div:hover img {
 
 section.services-provided div div img {
   position: relative;
-  max-width: 400px;
+  width: 100%;
+  height: 100%;
   -webkit-filter: grayscale(0.7);
           filter: grayscale(0.7);
   -webkit-transition: .3s;
@@ -847,10 +849,6 @@ section.services-provided div:last-of-type {
     -webkit-box-direction: reverse !important;
         -ms-flex-direction: column-reverse !important;
             flex-direction: column-reverse !important;
-  }
-  section.services-provided div div:first-child img {
-    width: 85% !important;
-    height: 100% !important;
   }
   section.services-provided div div:last-child {
     -webkit-box-orient: vertical !important;
