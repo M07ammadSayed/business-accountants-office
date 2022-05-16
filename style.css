@@ -849,7 +849,7 @@ section.services-provided div:last-of-type {
             flex-direction: column-reverse !important;
   }
   section.services-provided div div:first-child img {
-    width: 90% !important;
+    width: 85% !important;
     height: 100% !important;
   }
   section.services-provided div div:last-child {
@@ -890,7 +890,7 @@ section.services-provided div:last-of-type {
     padding: 0 !important;
   }
   section.services-provided div div:last-child p {
-    width: 90% !important;
+    width: 85% !important;
     font-size: 14px;
   }
 }
@@ -1221,7 +1221,7 @@ footer div.row div.contact-container {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  top: 15vh;
+  top: 20vh;
 }
 
 footer div.row div.contact-container div.footer-details {
@@ -1240,7 +1240,7 @@ footer div.row div.contact-container div.footer-details {
 }
 
 footer div.row div.contact-container div.footer-details img {
-  max-width: 300px !important;
+  max-width: 350px !important;
 }
 
 footer div.row div.contact-container div.footer-details div.footer-details-con {
