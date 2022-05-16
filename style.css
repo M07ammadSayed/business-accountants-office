@@ -670,6 +670,8 @@ section.services-provided div div:first-child {
   height: fit-content;
   overflow: hidden;
   background-color: #eee;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 section.services-provided div div:first-child:hover img {
