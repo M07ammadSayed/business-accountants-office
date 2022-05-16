@@ -342,7 +342,7 @@ section.why-con {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #eee;
-  padding: 100px 0 64px !important;
+  padding: 50px 0 64px !important;
 }
 
 section.why-con p.why-h1 {
@@ -851,7 +851,6 @@ section.services-provided div:last-of-type {
   section.services-provided div div:first-child img {
     width: 90% !important;
     height: 100% !important;
-    padding: 0 50px !important;
   }
   section.services-provided div div:last-child {
     -webkit-box-orient: vertical !important;
@@ -893,7 +892,6 @@ section.services-provided div:last-of-type {
   section.services-provided div div:last-child p {
     width: 90% !important;
     font-size: 14px;
-    padding: 0 50px !important;
   }
 }
 
@@ -1239,6 +1237,10 @@ footer div.row div.contact-container div.footer-details {
           align-items: center;
   margin: 0 !important;
   padding: 0 !important;
+}
+
+footer div.row div.contact-container div.footer-details img {
+  max-width: 300px !important;
 }
 
 footer div.row div.contact-container div.footer-details div.footer-details-con {
