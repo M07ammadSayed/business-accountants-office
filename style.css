@@ -661,7 +661,7 @@ section.services-provided div {
   background-color: #eee;
 }
 
-section.services-provided div div {
+section.services-provided div div:first-child {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -673,16 +673,16 @@ section.services-provided div div {
   margin: 0 50px !important;
 }
 
-section.services-provided div div:hover img {
+section.services-provided div div:first-child:hover img {
   -webkit-filter: grayscale(0);
           filter: grayscale(0);
   -webkit-transform: scale(1.05) rotate(3deg);
           transform: scale(1.05) rotate(3deg);
 }
 
-section.services-provided div div img {
+section.services-provided div div:first-child img {
   position: relative;
-  width: 100%;
+  width: 350px;
   height: 100%;
   -webkit-filter: grayscale(0.7);
           filter: grayscale(0.7);
@@ -690,7 +690,7 @@ section.services-provided div div img {
   transition: .3s;
 }
 
-section.services-provided div div {
+section.services-provided div div:last-child {
   position: relative;
   width: 400px;
   height: -webkit-fit-content;
@@ -710,12 +710,10 @@ section.services-provided div div {
       -ms-flex-align: center;
           align-items: center;
   margin: 0;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   background-color: #eee;
 }
 
-section.services-provided div div div {
+section.services-provided div div:last-child div {
   position: relative;
   width: 100%;
   height: -webkit-fit-content;
@@ -730,10 +728,11 @@ section.services-provided div div div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 30px;
+  -webkit-margin-after: 20px !important;
+          margin-block-end: 20px !important;
 }
 
-section.services-provided div div div span {
+section.services-provided div div:last-child div span {
   font-size: 23px;
   font-weight: 700;
   color: #E4E6EB;
@@ -747,13 +746,13 @@ section.services-provided div div div span {
           margin-block-end: 20px;
 }
 
-section.services-provided div div div h2 {
+section.services-provided div div:last-child div h2 {
   font-size: 23px;
   font-weight: 700;
   color: #554F4F;
 }
 
-section.services-provided div div p {
+section.services-provided div div:last-child p {
   font-weight: 400;
   color: #554F4F;
   text-align: justify;
@@ -857,9 +856,6 @@ section.services-provided div:last-of-type {
             flex-direction: column !important;
   }
   section.services-provided div div:last-child div {
-    height: -webkit-fit-content !important;
-    height: -moz-fit-content !important;
-    height: fit-content !important;
     -webkit-box-align: center !important;
         -ms-flex-align: center !important;
             align-items: center !important;
