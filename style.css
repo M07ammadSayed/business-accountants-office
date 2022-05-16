@@ -670,7 +670,7 @@ section.services-provided div div {
   height: fit-content;
   overflow: hidden;
   background-color: #eee;
-  margin: 0 30px !important;
+  margin: 0 50px !important;
 }
 
 section.services-provided div div:hover img {
