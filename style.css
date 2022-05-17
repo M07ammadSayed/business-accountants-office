@@ -1219,7 +1219,7 @@ footer div.row div.contact-container {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  top: 20vh;
+  top: 30vh;
 }
 
 footer div.row div.contact-container div.footer-details {
@@ -1342,6 +1342,7 @@ footer div.row div.footer-dec span {
     -webkit-box-align: center !important;
         -ms-flex-align: center !important;
             align-items: center !important;
+    top: 20vh !important;
   }
   footer div.row div.footer-dec {
     -webkit-box-orient: vertical !important;
