@@ -472,17 +472,13 @@ section.why-con div.why-con2 div.video {
 
 section.why-con div.why-con2 div.video video {
   width: 700px;
-  height: 400px;
+  height: 100%;
 }
 
 section.why-con div.why-con2 div.video div {
   position: relative;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  width: 80px;
+  height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -492,6 +488,8 @@ section.why-con div.why-con2 div.video div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  top: 181.875px;
+  left: 330px;
 }
 
 section.why-con div.why-con2 div.video div div {
@@ -509,13 +507,7 @@ section.why-con div.why-con2 div.video div div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  top: 57.3vh;
-  left: calc(100vh - 40px);
   text-align: center;
-}
-
-section.why-con div.why-con2 div.video div div:first-child {
-  display: block;
 }
 
 section.why-con div.why-con2 div.video div div:last-child {
@@ -529,9 +521,7 @@ section.why-con div.why-con2 div.video div div i.fa-play, section.why-con div.wh
 }
 
 section.why-con div.why-con2 div.video div div svg {
-  position: relative;
   color: #F48C06 !important;
-  top: 22.5px;
 }
 
 @media (max-width: 991.98px) {
@@ -572,7 +562,11 @@ section.why-con div.why-con2 div.video div div svg {
   }
   section.why-con div.video video {
     width: 100% !important;
-    padding: 0 20px !important;
+    padding: 0 10px !important;
+  }
+  section.why-con div.video div {
+    top: 181.875px !important;
+    left: calc(100% - 130px) !important;
   }
 }
 

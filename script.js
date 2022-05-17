@@ -18,13 +18,13 @@ document.getElementById("bi").onclick = function () {
 document.querySelector("div#play-bu div:first-child").onclick = function () {
     document.getElementById("vid").play();
     this.style.display = "none";
-    document.querySelector("div#play-bu div:last-child").style.display = "block";
+    document.querySelector("div#play-bu div:last-child").style.display = "flex";
 };
 
 document.querySelector("div#play-bu div:last-child").onclick = function () {
     document.getElementById("vid").pause();
     this.style.display = "none";
-    document.querySelector("div#play-bu div:first-child").style.display = "block";
+    document.querySelector("div#play-bu div:first-child").style.display = "flex";
 };
 
 document.querySelector(".bars").onclick = function () {
