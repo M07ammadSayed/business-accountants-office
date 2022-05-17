@@ -492,6 +492,7 @@ section.why-con div.why-con2 div.video div {
       -ms-flex-align: center;
           align-items: center;
   bottom: -15px;
+  left: calc( 50% + 95px);
 }
 
 section.why-con div.why-con2 div.video div div {
