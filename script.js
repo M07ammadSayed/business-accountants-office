@@ -44,4 +44,9 @@ for (let i = 0; i < navElements.length; i++) {
     });
 };
 
+setTimeout(function () {
+    document.querySelector("div.loading-container").style.display = "none";
+    document.body.style.overflowY = "auto";
+}, 4000);
+
 new WOW().init();
