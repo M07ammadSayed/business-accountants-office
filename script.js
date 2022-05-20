@@ -15,17 +15,17 @@ document.getElementById("bi").onclick = function () {
     });
 };
 
-document.querySelector("div#play-bu div:first-child").onclick = function () {
+document.querySelector("span.play").addEventListener("click", function () {
+    document.querySelector("span.pause").style.display = "flex";
+    this.style.display = "none";
     document.getElementById("vid").play();
-    this.style.display = "none";
-    document.querySelector("div#play-bu div:last-child").style.display = "flex";
-};
+}, false);
 
-document.querySelector("div#play-bu div:last-child").onclick = function () {
-    document.getElementById("vid").pause();
+document.querySelector("span.pause").addEventListener("click", function () {
+    document.querySelector("span.play").style.display = "flex";
     this.style.display = "none";
-    document.querySelector("div#play-bu div:first-child").style.display = "flex";
-};
+    document.getElementById("vid").pause();
+}, false);
 
 document.querySelector(".bars").onclick = function () {
     if (document.querySelector("nav ul").style.transform !== "translateY(0px)") {

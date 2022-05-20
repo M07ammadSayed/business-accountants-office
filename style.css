@@ -311,8 +311,6 @@ section.landing {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 section.landing::before {
@@ -434,15 +432,18 @@ section.why-con {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #eee;
-  padding: 50px 0 64px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  -webkit-padding-after: 30px !important;
+          padding-block-end: 30px !important;
 }
 
 section.why-con p.why-h1 {
@@ -469,7 +470,7 @@ section.why-con p.why-h1 span img {
   height: 40px;
 }
 
-section.why-con div.why-con2 {
+section.why-con div.why-con-2 {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -481,26 +482,18 @@ section.why-con div.why-con2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-section.why-con div.why-con2 div.opt-con {
-  position: relative;
-  width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  margin: 50px 0 100px 0;
-  background-color: #eee;
   overflow: hidden;
+  -webkit-padding-after: 30px;
+          padding-block-end: 30px;
 }
 
-section.why-con div.why-con2 div.opt-con div.row {
+section.why-con div.why-con-2 div.row {
   position: relative;
   width: 100%;
-  margin: 0 !important;
+  margin: 50px 0 !important;
 }
 
-section.why-con div.why-con2 div.opt-con div.row div {
+section.why-con div.why-con-2 div.row div {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -513,7 +506,7 @@ section.why-con div.why-con2 div.opt-con div.row div {
           align-items: center;
 }
 
-section.why-con div.why-con2 div.opt-con div.row div div {
+section.why-con div.why-con-2 div.row div div {
   position: relative;
   width: 260px;
   height: 189.38px;
@@ -536,16 +529,16 @@ section.why-con div.why-con2 div.opt-con div.row div div {
   padding: 0 !important;
 }
 
-section.why-con div.why-con2 div.opt-con div.row div div:hover {
+section.why-con div.why-con-2 div.row div div:hover {
   -webkit-transform: translateY(-20px);
           transform: translateY(-20px);
 }
 
-section.why-con div.why-con2 div.opt-con div.row div div:hover span.br {
+section.why-con div.why-con-2 div.row div div:hover span.br {
   top: 85px;
 }
 
-section.why-con div.why-con2 div.opt-con div.row div div span.br {
+section.why-con div.why-con-2 div.row div div span.br {
   width: 5px;
   height: 55px;
   background-color: #F48C06;
@@ -556,27 +549,21 @@ section.why-con div.why-con2 div.opt-con div.row div div span.br {
   transition: top .3s linear;
 }
 
-section.why-con div.why-con2 div.opt-con div.row div div h5 {
+section.why-con div.why-con-2 div.row div div h5 {
   font-weight: 700;
   margin: 30px 20px 14px;
   cursor: default;
 }
 
-section.why-con div.why-con2 div.opt-con div.row div div p {
+section.why-con div.why-con-2 div.row div div p {
   font-size: 14px;
   font-weight: 400;
   color: #554F4F;
   margin: 14px 20px 40px;
 }
 
-section.why-con div.why-con2 div.video {
+section.why-con div.why-con-2 div.video {
   position: relative;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -588,13 +575,13 @@ section.why-con div.why-con2 div.video {
           align-items: center;
 }
 
-section.why-con div.why-con2 div.video video {
+section.why-con div.why-con-2 div.video video {
   width: 700px;
   height: 100%;
 }
 
-section.why-con div.why-con2 div.video div {
-  position: relative;
+section.why-con div.why-con-2 div.video div {
+  position: absolute;
   width: 80px;
   height: 60px;
   display: -webkit-box;
@@ -606,16 +593,16 @@ section.why-con div.why-con2 div.video div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  top: calc( 100% * 3.2);
-  left: calc( 100% - 100px);
-}
-
-section.why-con div.why-con2 div.video div div {
-  position: relative;
-  width: 80px;
-  height: 60px;
   background-color: #08062B;
+  bottom: -30px;
+  right: 40px;
   cursor: pointer;
+}
+
+section.why-con div.why-con-2 div.video div span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -625,21 +612,19 @@ section.why-con div.why-con2 div.video div div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
+  cursor: pointer;
 }
 
-section.why-con div.why-con2 div.video div div:last-child {
-  display: none;
-}
-
-section.why-con div.why-con2 div.video div div i.fa-play, section.why-con div.why-con2 div.video div div i.fa-pause {
+section.why-con div.why-con-2 div.video div span svg {
+  position: absolute;
   width: 15px;
   height: 15px;
+  fill: #F48C06;
   cursor: pointer;
 }
 
-section.why-con div.why-con2 div.video div div svg {
-  color: #F48C06 !important;
+section.why-con div.why-con-2 div.video div span.pause {
+  display: none;
 }
 
 @media (max-width: 991.98px) {
@@ -679,18 +664,14 @@ section.why-con div.why-con2 div.video div div svg {
     font-size: 13px;
   }
   section.why-con div.video video {
-    width: 350px !important;
+    width: 100% !important;
     padding: 0 10px !important;
   }
   section.why-con div.video div {
     width: 60px !important;
     height: 40px !important;
-    top: calc( 100% * 2.2);
-    left: calc( 100% - 80px);
-  }
-  section.why-con div.video div div {
-    width: 60px !important;
-    height: 40px !important;
+    bottom: -20px !important;
+    right: 30px !important;
   }
 }
 
