@@ -286,8 +286,11 @@ section.why-con
                 height: 40px
     div.why-con2
         width: 100%
-        overflow: hidden
-        padding-block-end: 40px
+        display: flex
+        flex-direction: column
+        align-items: center
+        // overflow: hidden
+        // padding-block-end: 40px
         div.opt-con
             position: relative
             width: 100%
@@ -298,6 +301,7 @@ section.why-con
             div.row
                 position: relative
                 width: 100%
+                margin: 0 !important
                 div
                     position: relative
                     display: flex
@@ -337,24 +341,27 @@ section.why-con
                             margin: 14px 20px 40px
         div.video
             position: relative
-            width: 100%
+            width: fit-content
             height: fit-content
             display: flex
             justify-content: center
+            align-items: center
             video
                 width: 700px
                 height: 100%
             div
-                position: absolute
+                position: relative
                 width: 80px
                 height: 60px
                 display: flex
                 justify-content: center
                 align-items: center
-                bottom: -15px
-                left: calc( 50% + 95px )
+                // bottom: -15px
+                // left: calc( 50% + 95px )
+                top: calc( 100% * 3.2 )
+                left: calc( 100% - 100px )
                 div
-                    position: absolute
+                    position: relative
                     width: 80px
                     height: 60px
                     background-color: $secondary-color
@@ -408,8 +415,8 @@ section.why-con
             div
                 width: 60px !important
                 height: 40px !important
-                bottom: -10px !important
-                right: 20px !important
+                top: calc( 100% * 2.2 )
+                left: calc( 100% - 80px )
                 div
                     width: 60px !important
                     height: 40px !important

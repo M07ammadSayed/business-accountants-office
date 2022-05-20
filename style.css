@@ -471,9 +471,16 @@ section.why-con p.why-h1 span img {
 
 section.why-con div.why-con2 {
   width: 100%;
-  overflow: hidden;
-  -webkit-padding-after: 40px;
-          padding-block-end: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 section.why-con div.why-con2 div.opt-con {
@@ -490,6 +497,7 @@ section.why-con div.why-con2 div.opt-con {
 section.why-con div.why-con2 div.opt-con div.row {
   position: relative;
   width: 100%;
+  margin: 0 !important;
 }
 
 section.why-con div.why-con2 div.opt-con div.row div {
@@ -563,7 +571,9 @@ section.why-con div.why-con2 div.opt-con div.row div div p {
 
 section.why-con div.why-con2 div.video {
   position: relative;
-  width: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -573,6 +583,9 @@ section.why-con div.why-con2 div.video {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 section.why-con div.why-con2 div.video video {
@@ -581,7 +594,7 @@ section.why-con div.why-con2 div.video video {
 }
 
 section.why-con div.why-con2 div.video div {
-  position: absolute;
+  position: relative;
   width: 80px;
   height: 60px;
   display: -webkit-box;
@@ -593,12 +606,12 @@ section.why-con div.why-con2 div.video div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  bottom: -15px;
-  left: calc( 50% + 95px);
+  top: calc( 100% * 3.2);
+  left: calc( 100% - 100px);
 }
 
 section.why-con div.why-con2 div.video div div {
-  position: absolute;
+  position: relative;
   width: 80px;
   height: 60px;
   background-color: #08062B;
@@ -672,8 +685,8 @@ section.why-con div.why-con2 div.video div div svg {
   section.why-con div.video div {
     width: 60px !important;
     height: 40px !important;
-    bottom: -10px !important;
-    right: 20px !important;
+    top: calc( 100% * 2.2);
+    left: calc( 100% - 80px);
   }
   section.why-con div.video div div {
     width: 60px !important;
