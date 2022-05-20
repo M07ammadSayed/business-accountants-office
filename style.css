@@ -120,6 +120,21 @@ div.loading-container div span {
 
 a.circle-up {
   position: fixed;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   bottom: -50px;
   right: 15px;
   z-index: 9998;
@@ -129,6 +144,9 @@ a.circle-up {
   transition: filter .2s ease-in-out, opacity .5s ease-in-out, bottom .5s ease-in-out;
   transition: filter .2s ease-in-out, opacity .5s ease-in-out, bottom .5s ease-in-out, -webkit-filter .2s ease-in-out;
   opacity: 0;
+  background-color: #F48C06;
+  border-radius: 50%;
+  padding: 10px !important;
 }
 
 a.circle-up:hover {
@@ -139,10 +157,10 @@ a.circle-up:active {
   opacity: .5 !important;
 }
 
-a.circle-up svg.fa-circle-up {
-  color: #F48C06;
-  width: 40px;
-  height: 40px;
+a.circle-up svg.fa-angle-up {
+  color: #eee;
+  width: 20px;
+  height: 20px;
   z-index: 9998;
   cursor: pointer;
   -webkit-transition: opacity .5s ease-in-out, bottom .5s ease-in-out, -webkit-filter .2s ease-in-out;

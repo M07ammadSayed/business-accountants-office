@@ -69,20 +69,28 @@ div.loading-container
 
 a.circle-up
     position: fixed
+    width: fit-content
+    height: fit-content
+    display: flex
+    justify-content: center
+    align-items: center
     bottom: -50px
     right: 15px
     z-index: 9998
     cursor: pointer
     transition: filter .2s ease-in-out, opacity .5s ease-in-out, bottom .5s ease-in-out
     opacity: 0
+    background-color: $main-color
+    border-radius: 50%
+    padding: 10px !important
     &:hover
             opacity: .7 !important
     &:active
             opacity: .5 !important
-    svg.fa-circle-up
-        color: $main-color
-        width: 40px
-        height: 40px
+    svg.fa-angle-up
+        color: $primary-bg
+        width: 20px
+        height: 20px
         z-index: 9998
         cursor: pointer
         transition: filter .2s ease-in-out, opacity .5s ease-in-out, bottom .5s ease-in-out
