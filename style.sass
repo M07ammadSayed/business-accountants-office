@@ -5,7 +5,7 @@ $primary-text: #000
 $secondary-text: #554F4F
 $primary-bg: #eee
 // $secondary-bg: #000
-$first-animation: 4s
+$animation-delay-1: 3s
 
 *
     padding: 0
@@ -104,6 +104,7 @@ nav
     align-items: center
     background-color: $secondary-color
     z-index: 9998
+    animation-delay: $animation-delay-1
     div
         width: 250px
         margin-inline-start: 50px
@@ -231,7 +232,7 @@ section.landing
             font-weight: 700
             color: #E4E6EB
             cursor: default
-            animation-delay: $first-animation
+            animation-delay: $animation-delay-1
         p
             font-size: 18px
             letter-spacing: 1px
@@ -239,9 +240,9 @@ section.landing
             font-weight: 400
             color: #B0B3B8
             cursor: default
-            animation-delay: $first-animation
+            animation-delay: $animation-delay-1
         a
-            animation-delay: $first-animation
+            animation-delay: $animation-delay-1
             button
                 background-color: $main-color
                 font-weight: 700
@@ -276,8 +277,7 @@ section.why-con
     align-items: center
     background-color: $primary-bg
     margin: 0 !important
-    padding: 0 !important
-    padding-block-end: 30px !important
+    padding: 30px 0 !important
     p.why-h1
         position: absolute
         font-size: 30px
@@ -285,7 +285,7 @@ section.why-con
         top: -10vh
         color: #E4E6EB
         cursor: default
-        animation-delay: $first-animation
+        animation-delay: $animation-delay-1
         span
             position: relative
             display: inline-flex
@@ -845,23 +845,24 @@ footer
                             display: flex
                             justify-content: center
                             align-items: center
+                            animation-delay: 1s !important
         div.footer-dec
             position: relative
             width: 100%
             display: flex
             justify-content: space-around
             align-items: center
-            // padding: 20px 0 !important
+            padding: 20px 0
             background-color: $main-color
             span
                 color: #554F4F
                 font-weight: 700
                 font-size: 18px
-                padding: 20px 0
+                margin: 0 !important
+                padding: 0 !important
 
 @media (max-width: 991.98px)
     footer
-        // padding-block-start: 100px
         div.row
             div.contact-container
                 flex-direction: column !important
@@ -871,6 +872,6 @@ footer
             div.footer-dec
                 flex-direction: column !important
                 justify-content: center !important
+                padding: 10px 0 !important
                 span
                     text-align: center
-                    padding: 5px 0 !important

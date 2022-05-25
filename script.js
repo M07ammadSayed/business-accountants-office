@@ -49,4 +49,12 @@ setTimeout(function () {
     document.body.style.overflowY = "auto";
 }, 4000);
 
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+};
+
+window.onload = function () {
+    window.scrollTo(0, 0);
+};
+
 new WOW().init();

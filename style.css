@@ -184,6 +184,8 @@ nav {
           align-items: center;
   background-color: #08062B;
   z-index: 9998;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
 }
 
 nav div {
@@ -386,8 +388,8 @@ section.landing div h1 {
   font-weight: 700;
   color: #E4E6EB;
   cursor: default;
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
 }
 
 section.landing div p {
@@ -398,13 +400,13 @@ section.landing div p {
   font-weight: 400;
   color: #B0B3B8;
   cursor: default;
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
 }
 
 section.landing div a {
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
 }
 
 section.landing div a button {
@@ -459,9 +461,7 @@ section.why-con {
           align-items: center;
   background-color: #eee;
   margin: 0 !important;
-  padding: 0 !important;
-  -webkit-padding-after: 30px !important;
-          padding-block-end: 30px !important;
+  padding: 30px 0 !important;
 }
 
 section.why-con p.why-h1 {
@@ -471,8 +471,8 @@ section.why-con p.why-h1 {
   top: -10vh;
   color: #E4E6EB;
   cursor: default;
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
 }
 
 section.why-con p.why-h1 span {
@@ -1425,6 +1425,8 @@ footer div.row div.contact-container div.footer-details div.footer-details-con d
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-animation-delay: 1s !important;
+          animation-delay: 1s !important;
 }
 
 footer div.row div.footer-dec {
@@ -1438,6 +1440,7 @@ footer div.row div.footer-dec {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 20px 0;
   background-color: #F48C06;
 }
 
@@ -1445,7 +1448,8 @@ footer div.row div.footer-dec span {
   color: #554F4F;
   font-weight: 700;
   font-size: 18px;
-  padding: 20px 0;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 @media (max-width: 991.98px) {
@@ -1470,10 +1474,10 @@ footer div.row div.footer-dec span {
     -webkit-box-pack: center !important;
         -ms-flex-pack: center !important;
             justify-content: center !important;
+    padding: 10px 0 !important;
   }
   footer div.row div.footer-dec span {
     text-align: center;
-    padding: 5px 0 !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
