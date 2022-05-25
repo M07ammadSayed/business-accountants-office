@@ -411,11 +411,10 @@ section.landing div a {
 
 section.landing div a button {
   background-color: #F48C06;
-  font-weight: 700;
   -webkit-transition: color .5s ease-in-out, background-color .5s ease-in-out;
   transition: color .5s ease-in-out, background-color .5s ease-in-out;
-  border: 0;
   color: #E4E6EB;
+  border: 0;
 }
 
 section.landing div a button:hover {
@@ -1446,8 +1445,6 @@ footer div.row div.footer-dec {
 
 footer div.row div.footer-dec span {
   color: #554F4F;
-  font-weight: 700;
-  font-size: 18px;
   margin: 0 !important;
   padding: 0 !important;
 }
