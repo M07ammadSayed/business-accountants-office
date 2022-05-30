@@ -49,12 +49,11 @@ setTimeout(function () {
     document.body.style.overflowY = "auto";
 }, 4000);
 
-window.onbeforeunload = function () {
-    window.scrollTo(0, 0);
-};
-
+let homeHash = document.getElementById("homeHash");
 window.onload = function () {
-    window.scrollTo(0, 0);
+    if (location.hash !== homeHash.hash){
+        location.hash = "#Home";
+    }
 };
 
 new WOW().init();
