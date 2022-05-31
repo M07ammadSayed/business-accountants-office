@@ -1,3 +1,11 @@
+let homeHash = document.getElementById("homeHash");
+window.onload = function () {
+    if (window.scrollY !== 0 && location.hash !== homeHash.hash){
+        window.scroll(0, 0);
+        location.hash = "#Home";
+    }
+};
+
 window.onscroll = function () {
     if (window.scrollY > 200) {
         document.getElementById("bi").style.bottom = "15px";
@@ -48,12 +56,5 @@ setTimeout(function () {
     document.querySelector("div.loading-container").style.display = "none";
     document.body.style.overflowY = "auto";
 }, 4000);
-
-let homeHash = document.getElementById("homeHash");
-window.onload = function () {
-    if (location.hash !== homeHash.hash){
-        location.hash = "#Home";
-    }
-};
 
 new WOW().init();
